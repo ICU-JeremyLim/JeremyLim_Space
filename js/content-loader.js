@@ -18,6 +18,9 @@
         else if (page === 'writing') renderWriting(data);
         else if (page === 'links') renderLinks(data);
         else if (page === 'archive') renderArchive(data);
+
+        // Trigger scroll reveal for any dynamically added content
+        if (window.checkReveal) window.checkReveal();
       })
       .catch(function (err) {
         console.warn('Content loader: could not load content.json', err);

@@ -58,11 +58,9 @@
   }
 
   // --- Scroll Reveal ---
-  const revealElements = document.querySelectorAll('.reveal');
-
   function checkReveal() {
     var windowHeight = window.innerHeight;
-    revealElements.forEach(function (el) {
+    document.querySelectorAll('.reveal').forEach(function (el) {
       var rect = el.getBoundingClientRect();
       if (rect.top < windowHeight - 80) {
         el.classList.add('is-visible');
@@ -253,6 +251,8 @@
   });
 
   // --- Expose reinit functions for content-loader.js ---
+  window.checkReveal = checkReveal;
+
   window.reinitGallery = function () {
     initGalleryFilters();
     bindGalleryClicks();
