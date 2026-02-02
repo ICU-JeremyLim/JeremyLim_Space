@@ -1,0 +1,295 @@
+{
+  "gallery": [
+    {
+      "id": "g1",
+      "title": "Golden Hour",
+      "caption": "Mountain peaks bathed in warm evening light",
+      "category": "landscape",
+      "date": "2025-12-15",
+      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=90"
+    },
+    {
+      "id": "g2",
+      "title": "Neon Reflections",
+      "caption": "Rain-soaked streets reflecting city lights",
+      "category": "urban",
+      "date": "2025-11-20",
+      "thumbnail": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1400&q=90"
+    },
+    {
+      "id": "g3",
+      "title": "Still Waters",
+      "caption": "Lake reflecting the surrounding peaks at dawn",
+      "category": "landscape",
+      "date": "2025-10-08",
+      "thumbnail": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1400&q=90"
+    },
+    {
+      "id": "g4",
+      "title": "Morning Commute",
+      "caption": "The rhythm of daily life in the city",
+      "category": "street",
+      "date": "2025-09-15",
+      "thumbnail": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1400&q=90"
+    },
+    {
+      "id": "g5",
+      "title": "Forest Cathedral",
+      "caption": "Ancient trees forming a natural canopy",
+      "category": "landscape",
+      "date": "2025-08-20",
+      "thumbnail": "https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=1400&q=90"
+    },
+    {
+      "id": "g6",
+      "title": "The Reader",
+      "caption": "A quiet moment of contemplation",
+      "category": "portrait",
+      "date": "2025-07-10",
+      "thumbnail": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&q=90"
+    },
+    {
+      "id": "g7",
+      "title": "Kyoto Alley",
+      "caption": "Lanterns lighting the way through narrow streets",
+      "category": "travel",
+      "date": "2024-11-20",
+      "thumbnail": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1400&q=90"
+    },
+    {
+      "id": "g8",
+      "title": "Geometry",
+      "caption": "Architectural patterns in modern buildings",
+      "category": "urban",
+      "date": "2025-05-08",
+      "thumbnail": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=90"
+    },
+    {
+      "id": "g9",
+      "title": "Coastal Fog",
+      "caption": "Where the ocean meets the sky",
+      "category": "landscape",
+      "date": "2024-07-04",
+      "thumbnail": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&q=90"
+    },
+    {
+      "id": "g10",
+      "title": "Market Day",
+      "caption": "Colors and life at the local market",
+      "category": "street",
+      "date": "2024-06-15",
+      "thumbnail": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=90"
+    },
+    {
+      "id": "g11",
+      "title": "Northern Lights",
+      "caption": "Dancing colors over the Arctic",
+      "category": "travel",
+      "date": "2025-01-05",
+      "thumbnail": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1400&q=90"
+    },
+    {
+      "id": "g12",
+      "title": "Artist at Work",
+      "caption": "Creative concentration in the studio",
+      "category": "portrait",
+      "date": "2024-09-12",
+      "thumbnail": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80",
+      "full": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1400&q=90"
+    }
+  ],
+  "articles": [
+    {
+      "id": "a1",
+      "title": "On the Art of Seeing",
+      "date": "2026-01-15",
+      "excerpt": "Photography is not about cameras—it's about attention. The best photographs come from a willingness to slow down and truly observe the world around us. In this essay, I explore what it means to \"see\" in a world saturated with images.",
+      "content": "<p>Photography is not about cameras—it's about attention. The best photographs come from a willingness to slow down and truly observe the world around us.</p><p>In this essay, I explore what it means to \"see\" in a world saturated with images, and how the practice of photography has taught me to be more present.</p><p>We live in an age of unprecedented visual noise. Millions of images are uploaded every minute, yet how many of them truly capture something meaningful? The answer, I believe, lies not in better equipment or more advanced techniques, but in a more fundamental shift: learning to see.</p>",
+      "tags": ["Photography", "Essay", "Creativity"],
+      "featured": true,
+      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=700&q=80"
+    },
+    {
+      "id": "a2",
+      "title": "Silence and the City",
+      "date": "2025-12-28",
+      "excerpt": "In the noisiest places, I've found the most profound silence. A reflection on finding peace in urban landscapes and the spaces between the noise.",
+      "content": "<p>In the noisiest places, I've found the most profound silence. A reflection on finding peace in urban landscapes and the spaces between the noise. How cities teach us about solitude in unexpected ways.</p>",
+      "tags": ["Personal", "Reflection"],
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "a3",
+      "title": "The Photographer's Paradox",
+      "date": "2025-11-10",
+      "excerpt": "To photograph a moment is to step outside of it. I wrestle with the tension between experiencing life directly and the compulsion to document it.",
+      "content": "<p>To photograph a moment is to step outside of it. I wrestle with the tension between experiencing life directly and the compulsion to document it. Is the camera a bridge to the world, or a barrier?</p>",
+      "tags": ["Photography", "Philosophy"],
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "a4",
+      "title": "Lessons from Film",
+      "date": "2025-10-05",
+      "excerpt": "Returning to analog photography after years of digital changed how I approach every shot. With only 36 frames per roll, each press of the shutter becomes a deliberate act.",
+      "content": "<p>Returning to analog photography after years of digital changed how I approach every shot. With only 36 frames per roll, each press of the shutter becomes a deliberate act. What film taught me about patience, intention, and letting go.</p>",
+      "tags": ["Photography", "Film"],
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "a5",
+      "title": "Maps and Territories",
+      "date": "2025-09-18",
+      "excerpt": "On the difference between the map and the territory, and why getting lost is sometimes the most direct route to where you need to be.",
+      "content": "<p>On the difference between the map and the territory, and why getting lost is sometimes the most direct route to where you need to be. Reflections from a month of wandering through Southeast Asia.</p>",
+      "tags": ["Travel", "Personal"],
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "a6",
+      "title": "On Craft and Practice",
+      "date": "2025-08-02",
+      "excerpt": "Creativity isn't a lightning strike—it's a daily practice. I share my routines, the role of boredom in creative work, and why showing up consistently matters more than waiting for inspiration.",
+      "content": "<p>Creativity isn't a lightning strike—it's a daily practice. I share my routines, the role of boredom in creative work, and why showing up consistently matters more than waiting for inspiration.</p>",
+      "tags": ["Creativity", "Process"],
+      "featured": false,
+      "image": ""
+    },
+    {
+      "id": "a7",
+      "title": "What the Light Reveals",
+      "date": "2025-06-20",
+      "excerpt": "An exploration of light as both a physical phenomenon and a metaphor. How chasing golden hour taught me that the most beautiful things are often the most fleeting.",
+      "content": "<p>An exploration of light as both a physical phenomenon and a metaphor. How chasing golden hour taught me that the most beautiful things are often the most fleeting, and why that's exactly what makes them worth pursuing.</p>",
+      "tags": ["Photography", "Essay"],
+      "featured": false,
+      "image": ""
+    }
+  ],
+  "links": [
+    {
+      "id": "l1",
+      "title": "Instagram",
+      "description": "Daily photography, behind-the-scenes, and visual stories.",
+      "url": "#",
+      "handle": "@jeremylim",
+      "icon": "instagram",
+      "category": "social"
+    },
+    {
+      "id": "l2",
+      "title": "Twitter / X",
+      "description": "Thoughts, threads, and conversations about photography and creativity.",
+      "url": "#",
+      "handle": "@jeremylim",
+      "icon": "twitter",
+      "category": "social"
+    },
+    {
+      "id": "l3",
+      "title": "YouTube",
+      "description": "Video essays, photography walkthroughs, and travel vlogs.",
+      "url": "#",
+      "handle": "youtube.com/@jeremylim",
+      "icon": "youtube",
+      "category": "social"
+    },
+    {
+      "id": "l4",
+      "title": "LinkedIn",
+      "description": "Professional profile, work history, and collaborations.",
+      "url": "#",
+      "handle": "linkedin.com/in/jeremylim",
+      "icon": "linkedin",
+      "category": "social"
+    },
+    {
+      "id": "l5",
+      "title": "GitHub",
+      "description": "Open source projects, code, and creative tools.",
+      "url": "#",
+      "handle": "github.com/jeremylim",
+      "icon": "github",
+      "category": "social"
+    },
+    {
+      "id": "l6",
+      "title": "Newsletter",
+      "description": "Monthly dispatches on photography, reading, and creative life.",
+      "url": "#",
+      "handle": "Subscribe via email",
+      "icon": "mail",
+      "category": "social"
+    }
+  ],
+  "videos": [
+    {
+      "id": "v1",
+      "title": "The Art of Street Photography",
+      "description": "Exploring the streets of Tokyo with a film camera — tips, techniques, and reflections.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "date": "2025-10-22"
+    },
+    {
+      "id": "v2",
+      "title": "Finding Light: A Photography Essay",
+      "description": "A visual essay on chasing natural light across different landscapes and seasons.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "date": "2025-07-15"
+    },
+    {
+      "id": "v3",
+      "title": "My Creative Workflow",
+      "description": "From raw capture to final edit — a behind-the-scenes look at my photography process.",
+      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "date": "2025-03-12"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "r1",
+      "quote": "Jeremy has an extraordinary eye for detail and a rare ability to capture emotion in every frame. Working with him was an absolute pleasure.",
+      "name": "[Name]",
+      "role": "[Title, Organization]",
+      "avatar": ""
+    },
+    {
+      "id": "r2",
+      "quote": "His writing is thoughtful, precise, and deeply engaging. Jeremy brings a unique perspective that always leaves you thinking long after you've finished reading.",
+      "name": "[Name]",
+      "role": "[Title, Organization]",
+      "avatar": ""
+    },
+    {
+      "id": "r3",
+      "quote": "A true creative who understands both the art and craft of visual storytelling. Jeremy's portfolio speaks for itself—every piece is intentional and beautiful.",
+      "name": "[Name]",
+      "role": "[Title, Organization]",
+      "avatar": ""
+    }
+  ],
+  "profile": {
+    "name": "Jeremy Lim",
+    "title": "Photographer · Writer · Creative",
+    "bio": "I'm a multidisciplinary creative based in [Your City]. My work spans photography, personal essays, and visual storytelling. I believe in the power of observation—finding meaning in quiet moments and everyday scenes.",
+    "location": "[Your City, Country]",
+    "email": "hello@jeremylim.com",
+    "focus": "Photography, Writing, Visual Art",
+    "photo": ""
+  }
+}
