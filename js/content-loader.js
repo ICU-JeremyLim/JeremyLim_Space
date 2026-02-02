@@ -9,7 +9,7 @@
   var DATA_URL = 'data/content.json';
 
   function loadContent() {
-    fetch(DATA_URL)
+    fetch(DATA_URL + '?v=' + Date.now())
       .then(function (r) { return r.json(); })
       .then(function (data) {
         var page = detectPage();
