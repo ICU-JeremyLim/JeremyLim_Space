@@ -712,6 +712,24 @@ button {
   gap: var(--space-sm);
 }
 
+.article-card__content {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+}
+
+.article-card__content p {
+  margin-bottom: var(--space-md);
+}
+
+.article-card__content p:last-child {
+  margin-bottom: 0;
+}
+
 /* Featured article (larger) */
 .article-card--featured {
   grid-template-columns: 1fr 1fr;

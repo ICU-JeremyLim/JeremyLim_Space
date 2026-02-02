@@ -177,13 +177,36 @@
       if (isFeatured && item.image) {
         imgHtml = '<div class="article-card__image"><img src="' + esc(item.image) + '" alt="' + esc(item.title) + '" loading="lazy"></div>';
       }
-      return '<article class="' + cls + '">' + imgHtml + '<div>' +
+      var contentHtml = '';
+      if (item.content) {
+        // If content looks like HTML (has tags), use as-is; otherwise wrap paragraphs
+        var raw = item.content;
+        if (raw.indexOf('<p>') === -1) {
+          contentHtml = raw.split(/\n\n+/).map(function (p) { return '<p>' + esc(p.trim()) + '</p>'; }).join('');
+        } else {
+          contentHtml = raw;
+        }
+      }
+      return '<article class="' + cls + '" data-article-id="' + esc(item.id) + '">' + imgHtml + '<div>' +
         '<div class="article-card__date">' + formatDate(item.date) + '</div>' +
         '<h2 class="article-card__title">' + esc(item.title) + '</h2>' +
         '<p class="article-card__excerpt">' + esc(item.excerpt) + '</p>' +
+        '<div class="article-card__content" style="display:none;">' + contentHtml + '</div>' +
         '<div class="article-card__tags">' + (item.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
-        '<span class="article-card__readmore">Read full essay &rarr;</span></div></article>';
+        '<span class="article-card__readmore" style="cursor:pointer;">Read full essay &rarr;</span></div></article>';
     }).join('');
+
+    // Bind click to expand/collapse
+    list.querySelectorAll('.article-card__readmore').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.article-card');
+        var content = card.querySelector('.article-card__content');
+        if (!content) return;
+        var isOpen = content.style.display !== 'none';
+        content.style.display = isOpen ? 'none' : 'block';
+        btn.textContent = isOpen ? 'Read full essay \u2192' : 'Collapse \u2191';
+      });
+    });
   }
 
   // ===== LINKS PAGE =====
