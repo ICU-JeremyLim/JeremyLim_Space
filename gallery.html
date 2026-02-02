@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Jeremy Lim</title>
+  <meta name="description" content="Photography portfolio by Jeremy Lim.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Jeremy Lim</a>
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="gallery.html" class="nav__link nav__link--active">Gallery</a>
+        <a href="writing.html" class="nav__link">Writing</a>
+        <a href="links.html" class="nav__link">Links</a>
+        <a href="archive.html" class="nav__link">Archive</a>
+      </div>
+      <div class="nav__actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="nav__toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="nav__mobile-menu">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="gallery.html" class="nav__link nav__link--active">Gallery</a>
+      <a href="writing.html" class="nav__link">Writing</a>
+      <a href="links.html" class="nav__link">Links</a>
+      <a href="archive.html" class="nav__link">Archive</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-header__title animate-in">Gallery</h1>
+      <p class="page-header__subtitle animate-in">
+        A curated collection of my photography — landscapes, urban scenes, portraits, and moments.
+      </p>
+    </div>
+  </header>
+
+  <!-- Gallery -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container container--wide">
+
+      <!-- Filter Tabs -->
+      <div class="gallery-filters animate-in">
+        <button class="gallery-filter-btn is-active" data-filter="all">All</button>
+        <button class="gallery-filter-btn" data-filter="landscape">Landscape</button>
+        <button class="gallery-filter-btn" data-filter="urban">Urban</button>
+        <button class="gallery-filter-btn" data-filter="portrait">Portrait</button>
+        <button class="gallery-filter-btn" data-filter="street">Street</button>
+        <button class="gallery-filter-btn" data-filter="travel">Travel</button>
+      </div>
+
+      <!-- Masonry Gallery Grid -->
+      <div class="gallery-grid">
+
+        <!-- ROW 1 -->
+        <div class="gallery-grid__item" data-category="landscape" data-caption="Golden Hour — Mountain peaks bathed in warm evening light" data-full="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Mountain peaks at golden hour" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Golden Hour</div>
+            <div class="gallery-grid__meta">Landscape &middot; 2025</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="urban" data-caption="Neon Reflections — Rain-soaked streets reflecting city lights" data-full="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&q=80" alt="Neon city street at night" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Neon Reflections</div>
+            <div class="gallery-grid__meta">Urban &middot; 2025</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="landscape" data-caption="Still Waters — Lake reflecting the surrounding peaks at dawn" data-full="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600&q=80" alt="Lake reflection at dawn" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Still Waters</div>
+            <div class="gallery-grid__meta">Landscape &middot; 2025</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="street" data-caption="Morning Commute — The rhythm of daily life in the city" data-full="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80" alt="City skyline" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Morning Commute</div>
+            <div class="gallery-grid__meta">Street &middot; 2025</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="landscape" data-caption="Forest Cathedral — Ancient trees forming a natural canopy" data-full="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=600&q=80" alt="Forest path with sunlight" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Forest Cathedral</div>
+            <div class="gallery-grid__meta">Landscape &middot; 2025</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="portrait" data-caption="The Reader — A quiet moment of contemplation" data-full="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Portrait" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">The Reader</div>
+            <div class="gallery-grid__meta">Portrait &middot; 2025</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="travel" data-caption="Kyoto Alley — Lanterns lighting the way through narrow streets" data-full="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80" alt="Kyoto alley with lanterns" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Kyoto Alley</div>
+            <div class="gallery-grid__meta">Travel &middot; 2024</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="urban" data-caption="Geometry — Architectural patterns in modern buildings" data-full="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80" alt="Modern architecture" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Geometry</div>
+            <div class="gallery-grid__meta">Urban &middot; 2025</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="landscape" data-caption="Coastal Fog — Where the ocean meets the sky" data-full="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" alt="Misty coastal scene" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Coastal Fog</div>
+            <div class="gallery-grid__meta">Landscape &middot; 2024</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="street" data-caption="Market Day — Colors and life at the local market" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Market scene" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Market Day</div>
+            <div class="gallery-grid__meta">Street &middot; 2024</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="travel" data-caption="Northern Lights — Dancing colors over the Arctic" data-full="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&q=80" alt="Northern lights" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Northern Lights</div>
+            <div class="gallery-grid__meta">Travel &middot; 2024</div>
+          </div>
+        </div>
+
+        <div class="gallery-grid__item" data-category="portrait" data-caption="Artist at Work — Creative concentration in the studio" data-full="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1400&q=90">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80" alt="Portrait in studio" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Artist at Work</div>
+            <div class="gallery-grid__meta">Portrait &middot; 2024</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous">&lsaquo;</button>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next">&rsaquo;</button>
+    <img class="lightbox__img" src="" alt="">
+    <div class="lightbox__caption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__text">&copy; 2026 Jeremy Lim. All rights reserved.</span>
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="gallery.html" class="footer__link">Gallery</a>
+          <a href="writing.html" class="footer__link">Writing</a>
+          <a href="links.html" class="footer__link">Links</a>
+          <a href="archive.html" class="footer__link">Archive</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

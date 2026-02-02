@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeremy Lim</title>
+  <meta name="description" content="Personal website of Jeremy Lim — photographer, writer, and creative.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Jeremy Lim</a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link nav__link--active">Home</a>
+        <a href="gallery.html" class="nav__link">Gallery</a>
+        <a href="writing.html" class="nav__link">Writing</a>
+        <a href="links.html" class="nav__link">Links</a>
+        <a href="archive.html" class="nav__link">Archive</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="nav__mobile-menu">
+      <a href="index.html" class="nav__link nav__link--active">Home</a>
+      <a href="gallery.html" class="nav__link">Gallery</a>
+      <a href="writing.html" class="nav__link">Writing</a>
+      <a href="links.html" class="nav__link">Links</a>
+      <a href="archive.html" class="nav__link">Archive</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__greeting animate-in">Hello, I'm</div>
+        <h1 class="hero__name animate-in">Jeremy Lim</h1>
+        <p class="hero__description animate-in">
+          Photographer, writer, and observer of the world. I capture moments through my lens
+          and explore ideas through words. Welcome to my corner of the internet.
+        </p>
+        <div class="hero__cta animate-in">
+          <a href="gallery.html" class="btn btn--primary">View Gallery</a>
+          <a href="writing.html" class="btn btn--outline">Read Essays</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Name Card Section -->
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">About</div>
+        <h2 class="section__title">Who I Am</h2>
+      </div>
+
+      <div class="namecard reveal">
+        <div>
+          <!-- Replace with your photo -->
+          <div class="namecard__photo" style="background: linear-gradient(135deg, var(--bg-tertiary), var(--border)); display:flex; align-items:center; justify-content:center; color: var(--text-tertiary); font-size: var(--text-sm); font-family: var(--font-mono);">
+            Your Photo
+          </div>
+        </div>
+        <div>
+          <h3 class="namecard__name">Jeremy Lim</h3>
+          <p class="namecard__title">Photographer &middot; Writer &middot; Creative</p>
+          <p class="namecard__bio">
+            I'm a multidisciplinary creative based in [Your City]. My work spans photography,
+            personal essays, and visual storytelling. I believe in the power of observation—finding
+            meaning in quiet moments and everyday scenes. When I'm not behind a camera or
+            at a keyboard, you'll find me exploring cities, reading, or sketching.
+          </p>
+
+          <div class="namecard__details">
+            <span class="namecard__label">Location</span>
+            <span class="namecard__value">[Your City, Country]</span>
+
+            <span class="namecard__label">Email</span>
+            <span class="namecard__value"><a href="mailto:hello@jeremylim.com">hello@jeremylim.com</a></span>
+
+            <span class="namecard__label">Focus</span>
+            <span class="namecard__value">Photography, Writing, Visual Art</span>
+          </div>
+
+          <div class="namecard__socials">
+            <a href="#" class="namecard__social-link" aria-label="Instagram" title="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="namecard__social-link" aria-label="Twitter" title="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" class="namecard__social-link" aria-label="YouTube" title="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="namecard__social-link" aria-label="GitHub" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Work Preview -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">Featured</div>
+        <h2 class="section__title">Recent Work</h2>
+        <p class="section__description">A selection of recent photography and writing.</p>
+      </div>
+
+      <div class="gallery-grid reveal" style="margin-bottom: var(--space-xl);">
+        <!-- Placeholder images — replace src with your actual photos -->
+        <div class="gallery-grid__item">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Mountain landscape" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Mountain Light</div>
+            <div class="gallery-grid__meta">Landscape &middot; 2025</div>
+          </div>
+        </div>
+        <div class="gallery-grid__item">
+          <img src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=600&q=80" alt="Forest path" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Forest Path</div>
+            <div class="gallery-grid__meta">Nature &middot; 2025</div>
+          </div>
+        </div>
+        <div class="gallery-grid__item">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80" alt="City skyline" loading="lazy">
+          <div class="gallery-grid__overlay">
+            <div class="gallery-grid__caption">Urban Dusk</div>
+            <div class="gallery-grid__meta">Urban &middot; 2025</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center;">
+        <a href="gallery.html" class="btn btn--outline">View All Photos &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations / Quotes -->
+  <section class="section section--alt" id="recommendations">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">Kind Words</div>
+        <h2 class="section__title">Recommendations</h2>
+      </div>
+
+      <div class="recommendations reveal">
+        <div class="recommendation-card">
+          <div class="recommendation-card__quote">
+            Jeremy has an extraordinary eye for detail and a rare ability to capture emotion
+            in every frame. Working with him was an absolute pleasure.
+          </div>
+          <div class="recommendation-card__author">
+            <div class="recommendation-card__avatar" style="background: var(--bg-tertiary);"></div>
+            <div>
+              <div class="recommendation-card__name">[Name]</div>
+              <div class="recommendation-card__role">[Title, Organization]</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recommendation-card">
+          <div class="recommendation-card__quote">
+            His writing is thoughtful, precise, and deeply engaging. Jeremy brings a unique
+            perspective that always leaves you thinking long after you've finished reading.
+          </div>
+          <div class="recommendation-card__author">
+            <div class="recommendation-card__avatar" style="background: var(--bg-tertiary);"></div>
+            <div>
+              <div class="recommendation-card__name">[Name]</div>
+              <div class="recommendation-card__role">[Title, Organization]</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recommendation-card">
+          <div class="recommendation-card__quote">
+            A true creative who understands both the art and craft of visual storytelling.
+            Jeremy's portfolio speaks for itself—every piece is intentional and beautiful.
+          </div>
+          <div class="recommendation-card__author">
+            <div class="recommendation-card__avatar" style="background: var(--bg-tertiary);"></div>
+            <div>
+              <div class="recommendation-card__name">[Name]</div>
+              <div class="recommendation-card__role">[Title, Organization]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Writing Preview -->
+  <section class="section" id="recent-writing">
+    <div class="container container--narrow">
+      <div class="section__header reveal">
+        <div class="section__label">Writing</div>
+        <h2 class="section__title">Recent Essays</h2>
+      </div>
+
+      <div class="articles-list reveal">
+        <a href="writing.html" class="article-card">
+          <div>
+            <div class="article-card__date">January 2026</div>
+            <h3 class="article-card__title">On the Art of Seeing</h3>
+            <p class="article-card__excerpt">
+              Photography is not about cameras—it's about attention. The best photographs
+              come from a willingness to slow down and truly observe the world around us.
+            </p>
+            <div class="article-card__tags">
+              <span class="tag">Photography</span>
+              <span class="tag">Essay</span>
+            </div>
+            <span class="article-card__readmore">Read more &rarr;</span>
+          </div>
+        </a>
+
+        <a href="writing.html" class="article-card">
+          <div>
+            <div class="article-card__date">December 2025</div>
+            <h3 class="article-card__title">Silence and the City</h3>
+            <p class="article-card__excerpt">
+              In the noisiest places, I've found the most profound silence. A reflection on
+              finding peace in urban landscapes and the spaces between the noise.
+            </p>
+            <div class="article-card__tags">
+              <span class="tag">Personal</span>
+              <span class="tag">Reflection</span>
+            </div>
+            <span class="article-card__readmore">Read more &rarr;</span>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align:center; margin-top: var(--space-xl);">
+        <a href="writing.html" class="btn btn--outline">All Essays &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__text">&copy; 2026 Jeremy Lim. All rights reserved.</span>
+        <div class="footer__links">
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="gallery.html" class="footer__link">Gallery</a>
+          <a href="writing.html" class="footer__link">Writing</a>
+          <a href="links.html" class="footer__link">Links</a>
+          <a href="archive.html" class="footer__link">Archive</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
