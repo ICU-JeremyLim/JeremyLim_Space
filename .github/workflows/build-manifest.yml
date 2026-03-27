@@ -1,0 +1,39 @@
+name: Build Media Manifest
+
+# Runs whenever media files are pushed to the repository.
+# Scans images/gallery/, images/articles/, and audio/ folders,
+# then writes data/media-manifest.json so the site can display new uploads
+# without manually editing content.json.
+
+on:
+  push:
+    paths:
+      - 'images/gallery/**'
+      - 'images/articles/**'
+      - 'audio/**'
+  workflow_dispatch:   # allow manual trigger from GitHub Actions tab
+
+jobs:
+  build-manifest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate media manifest
+        run: python3 scripts/build-manifest.py
+
+      - name: Commit manifest if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/media-manifest.json
+          if git diff --staged --quiet; then
+            echo "No changes to manifest."
+          else
+            git commit -m "chore: auto-update media manifest [skip ci]"
+            git push
+          fi

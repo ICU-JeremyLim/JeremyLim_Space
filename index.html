@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeremy Lim</title>
-  <meta name="description" content="Personal website of Jeremy Lim — photographer, writer, and creative.">
+  <meta name="description" content="Personal website of Jeremy Lim — linguist, photographer, writer, and Christian.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,7 @@
         <a href="index.html" class="nav__link nav__link--active">Home</a>
         <a href="gallery.html" class="nav__link">Gallery</a>
         <a href="writing.html" class="nav__link">Writing</a>
+        <a href="audio.html" class="nav__link">Audio</a>
         <a href="links.html" class="nav__link">Links</a>
         <a href="archive.html" class="nav__link">Archive</a>
       </div>
@@ -48,128 +49,104 @@
       <a href="index.html" class="nav__link nav__link--active">Home</a>
       <a href="gallery.html" class="nav__link">Gallery</a>
       <a href="writing.html" class="nav__link">Writing</a>
+      <a href="audio.html" class="nav__link">Audio</a>
       <a href="links.html" class="nav__link">Links</a>
       <a href="archive.html" class="nav__link">Archive</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- ===================== PROFILE CARD ===================== -->
+  <section class="profile-section">
     <div class="container">
-      <div class="hero__content">
-        <div class="hero__greeting animate-in">Hello, I'm</div>
-        <h1 class="hero__name animate-in" id="hero-name">Jeremy Lim</h1>
-        <p class="hero__description animate-in" id="hero-description">
-          Photographer, writer, and observer of the world. I capture moments through my lens
-          and explore ideas through words. Welcome to my corner of the internet.
-        </p>
-        <div class="hero__cta animate-in">
-          <a href="gallery.html" class="btn btn--primary">View Gallery</a>
-          <a href="writing.html" class="btn btn--outline">Read Essays</a>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div class="profile-card reveal">
 
-  <!-- About / Name Card Section -->
-  <section class="section section--alt" id="about">
-    <div class="container">
-      <div class="section__header reveal">
-        <div class="section__label">About</div>
-        <h2 class="section__title">Who I Am</h2>
-      </div>
-
-      <div class="namecard reveal">
-        <div>
-          <!-- Replace with your photo -->
-          <div class="namecard__photo" id="nc-photo" style="background: linear-gradient(135deg, var(--bg-tertiary), var(--border)); display:flex; align-items:center; justify-content:center; color: var(--text-tertiary); font-size: var(--text-sm); font-family: var(--font-mono);">
-            Your Photo
+        <!-- Photo -->
+        <div class="profile-card__photo-wrap">
+          <div class="profile-card__photo" id="nc-photo">
+            <!-- Filled by content-loader.js -->
           </div>
         </div>
-        <div>
-          <h3 class="namecard__name" id="nc-name">Jeremy Lim</h3>
-          <p class="namecard__title" id="nc-title">Photographer &middot; Writer &middot; Creative</p>
-          <p class="namecard__bio" id="nc-bio">
-            I'm a multidisciplinary creative based in [Your City]. My work spans photography,
-            personal essays, and visual storytelling. I believe in the power of observation—finding
-            meaning in quiet moments and everyday scenes. When I'm not behind a camera or
-            at a keyboard, you'll find me exploring cities, reading, or sketching.
+
+        <!-- Info -->
+        <div class="profile-card__body">
+          <h1 class="profile-card__name" id="nc-name">Jeremy Lim</h1>
+          <p class="profile-card__title" id="nc-title">Christian &middot; Linguist &middot; Photographer &middot; Writer</p>
+
+          <p class="profile-card__bio" id="nc-bio">
+            <!-- Filled by content-loader.js -->
           </p>
 
-          <div class="namecard__details">
-            <span class="namecard__label">Location</span>
-            <span class="namecard__value" id="nc-location">[Your City, Country]</span>
+          <!-- Quick-nav chips — visitors know you in 60 seconds -->
+          <nav class="profile-card__chips" aria-label="Quick navigation">
+            <a href="writing.html" class="chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              Writing &amp; Essays
+            </a>
+            <a href="gallery.html" class="chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              Photography
+            </a>
+            <a href="audio.html" class="chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+              Audio
+            </a>
+            <a href="writing.html#faith" class="chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Faith
+            </a>
+            <a href="links.html" class="chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+              Find Me Online
+            </a>
+            <a href="mailto:" class="chip" id="nc-email-chip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Contact
+            </a>
+          </nav>
 
-            <span class="namecard__label">Email</span>
-            <span class="namecard__value"><a href="mailto:hello@jeremylim.com" id="nc-email">hello@jeremylim.com</a></span>
-
-            <span class="namecard__label">Focus</span>
-            <span class="namecard__value" id="nc-focus">Photography, Writing, Visual Art</span>
-          </div>
-
-          <div class="namecard__socials">
-            <a href="#" class="namecard__social-link" aria-label="Instagram" title="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-            </a>
-            <a href="#" class="namecard__social-link" aria-label="Twitter" title="Twitter">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-            </a>
-            <a href="#" class="namecard__social-link" aria-label="YouTube" title="YouTube">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg>
-            </a>
-            <a href="#" class="namecard__social-link" aria-label="GitHub" title="GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-            </a>
+          <!-- Details row -->
+          <div class="profile-card__meta">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span id="nc-location">Mitaka, Tokyo</span>
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="mailto:" id="nc-email">linyuhao1069@gmail.com</a>
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              International Christian University, Tokyo
+            </span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Featured Work Preview -->
+  <!-- ===================== RECENT PHOTOS ===================== -->
   <section class="section" id="featured">
     <div class="container">
       <div class="section__header reveal">
-        <div class="section__label">Featured</div>
-        <h2 class="section__title">Recent Work</h2>
-        <p class="section__description">A selection of recent photography and writing.</p>
+        <div class="section__label">Photography</div>
+        <h2 class="section__title">Recent Photos</h2>
+        <p class="section__description">A selection of recent work. <a href="gallery.html" class="text-link">View full gallery &rarr;</a></p>
       </div>
 
-      <div class="gallery-grid reveal" id="featured-gallery" style="margin-bottom: var(--space-xl);">
-        <!-- Dynamically loaded from content.json -->
-      </div>
-
-      <div style="text-align:center;">
-        <a href="gallery.html" class="btn btn--outline">View All Photos &rarr;</a>
-      </div>
+      <div class="gallery-grid reveal" id="featured-gallery"></div>
     </div>
   </section>
 
-  <!-- Recommendations / Quotes -->
-  <section class="section section--alt" id="recommendations">
-    <div class="container">
-      <div class="section__header reveal">
-        <div class="section__label">Kind Words</div>
-        <h2 class="section__title">Recommendations</h2>
-      </div>
-
-      <div class="recommendations reveal" id="home-recommendations">
-        <!-- Dynamically loaded from content.json -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Recent Writing Preview -->
-  <section class="section" id="recent-writing">
+  <!-- ===================== LATEST WRITING ===================== -->
+  <section class="section section--alt" id="recent-writing">
     <div class="container container--narrow">
       <div class="section__header reveal">
         <div class="section__label">Writing</div>
-        <h2 class="section__title">Recent Essays</h2>
+        <h2 class="section__title">Latest Essays</h2>
       </div>
 
-      <div class="articles-list reveal" id="home-articles">
-        <!-- Dynamically loaded from content.json -->
-      </div>
+      <div class="articles-list reveal" id="home-articles"></div>
 
       <div style="text-align:center; margin-top: var(--space-xl);">
         <a href="writing.html" class="btn btn--outline">All Essays &rarr;</a>
@@ -177,15 +154,44 @@
     </div>
   </section>
 
+  <!-- ===================== RECENT AUDIO ===================== -->
+  <section class="section" id="recent-audio">
+    <div class="container container--narrow">
+      <div class="section__header reveal">
+        <div class="section__label">Audio</div>
+        <h2 class="section__title">Recent Recordings</h2>
+      </div>
+
+      <div class="audio-list reveal" id="home-audio"></div>
+
+      <div style="text-align:center; margin-top: var(--space-xl);" id="home-audio-more" style="display:none;">
+        <a href="audio.html" class="btn btn--outline">All Audio &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RECOMMENDATIONS ===================== -->
+  <section class="section section--alt" id="recommendations">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">Kind Words</div>
+        <h2 class="section__title">Recommendations</h2>
+      </div>
+
+      <div class="recommendations reveal" id="home-recommendations"></div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <span class="footer__text">&copy; 2026 Jeremy Lim. All rights reserved.</span>
+        <span class="footer__text">&copy; <span id="footer-year">2026</span> Jeremy Lim. All rights reserved.</span>
         <div class="footer__links">
           <a href="index.html" class="footer__link">Home</a>
           <a href="gallery.html" class="footer__link">Gallery</a>
           <a href="writing.html" class="footer__link">Writing</a>
+          <a href="audio.html" class="footer__link">Audio</a>
           <a href="links.html" class="footer__link">Links</a>
           <a href="archive.html" class="footer__link">Archive</a>
         </div>
@@ -193,12 +199,12 @@
     </div>
   </footer>
 
-  <!-- Back to top -->
   <button class="back-to-top" aria-label="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
   <script src="js/main.js"></script>
   <script src="js/content-loader.js"></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -16,6 +16,7 @@
         if (page === 'index') renderHome(data);
         else if (page === 'gallery') renderGallery(data);
         else if (page === 'writing') renderWriting(data);
+        else if (page === 'audio') renderAudio(data);
         else if (page === 'links') renderLinks(data);
         else if (page === 'archive') renderArchive(data);
 
@@ -76,23 +77,14 @@
 
   // ===== HOME PAGE =====
   function renderHome(data) {
-    // Profile / Name Card
     var p = data.profile || {};
-    var nameEl = document.getElementById('home-name');
-    if (nameEl) nameEl.textContent = p.name || 'Jeremy Lim';
 
-    var heroName = document.getElementById('hero-name');
-    if (heroName) heroName.textContent = p.name || 'Jeremy Lim';
-
-    var heroDesc = document.getElementById('hero-description');
-    if (heroDesc && p.bio) heroDesc.textContent = p.bio;
-
-    // Name card
+    // Profile card fields
     var ncName = document.getElementById('nc-name');
-    if (ncName) ncName.textContent = p.name || '';
+    if (ncName) ncName.textContent = p.name || 'Jeremy Lim';
 
     var ncTitle = document.getElementById('nc-title');
-    if (ncTitle) ncTitle.textContent = p.title || '';
+    if (ncTitle && p.title) ncTitle.innerHTML = p.title.replace(/\//g, ' &middot; ');
 
     var ncBio = document.getElementById('nc-bio');
     if (ncBio) ncBio.textContent = p.bio || '';
@@ -103,22 +95,49 @@
     var ncEmail = document.getElementById('nc-email');
     if (ncEmail) { ncEmail.textContent = p.email || ''; ncEmail.href = 'mailto:' + (p.email || ''); }
 
-    var ncFocus = document.getElementById('nc-focus');
-    if (ncFocus) ncFocus.textContent = p.focus || '';
+    var ncEmailChip = document.getElementById('nc-email-chip');
+    if (ncEmailChip && p.email) ncEmailChip.href = 'mailto:' + p.email;
 
     var ncPhoto = document.getElementById('nc-photo');
-    if (ncPhoto && p.photo) { ncPhoto.innerHTML = '<img src="' + esc(p.photo) + '" alt="' + esc(p.name) + '" style="width:100%;height:100%;object-fit:cover;">'; }
+    if (ncPhoto && p.photo) {
+      ncPhoto.innerHTML = '<img src="' + esc(p.photo) + '" alt="' + esc(p.name) + '">';
+    }
 
-    // Featured gallery (first 3)
+    // Featured gallery (first 6)
     var featuredGrid = document.getElementById('featured-gallery');
     if (featuredGrid && data.gallery) {
-      var photos = data.gallery.slice(0, 3);
+      var photos = data.gallery.slice(0, 6);
       featuredGrid.innerHTML = photos.map(function (item) {
         return '<div class="gallery-grid__item">' +
           '<img src="' + esc(item.thumbnail) + '" alt="' + esc(item.title) + '" loading="lazy">' +
           '<div class="gallery-grid__overlay"><div class="gallery-grid__caption">' + esc(item.title) + '</div>' +
           '<div class="gallery-grid__meta">' + esc(item.category) + ' &middot; ' + (item.date || '').substring(0, 4) + '</div></div></div>';
       }).join('');
+    }
+
+    // Recent articles (first 3)
+    var recentArticles = document.getElementById('home-articles');
+    if (recentArticles && data.articles) {
+      var arts = data.articles.slice(0, 3);
+      recentArticles.innerHTML = arts.map(function (item) {
+        return '<article class="article-card">' +
+          '<div><div class="article-card__date">' + formatDate(item.date) + '</div>' +
+          '<h3 class="article-card__title">' + esc(item.title) + '</h3>' +
+          '<p class="article-card__excerpt">' + esc(item.excerpt) + '</p>' +
+          '<div class="article-card__tags">' + (item.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
+          '<a href="writing.html" class="article-card__readmore">Read essay &rarr;</a></div></article>';
+      }).join('');
+    }
+
+    // Recent audio (first 3)
+    var homeAudio = document.getElementById('home-audio');
+    var homeAudioMore = document.getElementById('home-audio-more');
+    if (homeAudio && data.audio && data.audio.length > 0) {
+      var tracks = data.audio.slice(0, 3);
+      homeAudio.innerHTML = tracks.map(function (item) { return renderAudioCard(item); }).join('');
+      if (homeAudioMore) homeAudioMore.style.display = '';
+    } else if (homeAudio) {
+      homeAudio.parentElement.style.display = 'none';
     }
 
     // Recommendations
@@ -133,20 +152,30 @@
           '<div class="recommendation-card__role">' + esc(item.role) + '</div></div></div></div>';
       }).join('');
     }
+  }
 
-    // Recent articles (first 2)
-    var recentArticles = document.getElementById('home-articles');
-    if (recentArticles && data.articles) {
-      var arts = data.articles.slice(0, 2);
-      recentArticles.innerHTML = arts.map(function (item) {
-        return '<a href="writing.html" class="article-card"><div>' +
-          '<div class="article-card__date">' + monthYear(item.date) + '</div>' +
-          '<h3 class="article-card__title">' + esc(item.title) + '</h3>' +
-          '<p class="article-card__excerpt">' + esc(item.excerpt) + '</p>' +
-          '<div class="article-card__tags">' + (item.tags || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' +
-          '<span class="article-card__readmore">Read more &rarr;</span></div></a>';
-      }).join('');
-    }
+  // ===== AUDIO CARD HELPER =====
+  function renderAudioCard(item) {
+    var iconSvg = '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>';
+    var durationHtml = item.duration
+      ? '<span class="audio-card__duration"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>' + esc(item.duration) + '</span>'
+      : '';
+    var playerHtml = item.file
+      ? '<audio class="audio-card__player" controls preload="none"><source src="' + esc(item.file) + '">Your browser does not support audio playback.</audio>'
+      : '';
+    return '<div class="audio-card" data-category="' + esc(item.category || 'other') + '">' +
+      '<div class="audio-card__icon">' + iconSvg + '</div>' +
+      '<div class="audio-card__body">' +
+        '<h3 class="audio-card__title">' + esc(item.title) + '</h3>' +
+        '<p class="audio-card__desc">' + esc(item.description || '') + '</p>' +
+        '<div class="audio-card__meta">' +
+          '<span class="audio-card__date">' + formatDate(item.date) + '</span>' +
+          durationHtml +
+        '</div>' +
+        playerHtml +
+      '</div>' +
+      '<span class="audio-card__category">' + esc(item.category || 'other') + '</span>' +
+      '</div>';
   }
 
   // ===== GALLERY PAGE =====
@@ -249,6 +278,22 @@
     }
   }
 
+  // ===== AUDIO PAGE =====
+  function renderAudio(data) {
+    var list = document.getElementById('audio-list');
+    var emptyState = document.getElementById('audio-empty');
+    if (!list) return;
+
+    if (!data.audio || data.audio.length === 0) {
+      list.style.display = 'none';
+      if (emptyState) emptyState.style.display = '';
+      return;
+    }
+
+    list.innerHTML = data.audio.map(function (item) { return renderAudioCard(item); }).join('');
+    if (emptyState) emptyState.style.display = 'none';
+  }
+
   // ===== ARCHIVE PAGE =====
   function renderArchive(data) {
     var container = document.getElementById('archive-container');
@@ -258,6 +303,7 @@
     var all = [];
     (data.gallery || []).forEach(function (i) { all.push({ type: 'photo', title: i.title, date: i.date, link: 'gallery.html' }); });
     (data.articles || []).forEach(function (i) { all.push({ type: 'essay', title: i.title, date: i.date, link: 'writing.html' }); });
+    (data.audio || []).forEach(function (i) { all.push({ type: 'audio', title: i.title, date: i.date, link: 'audio.html' }); });
     (data.videos || []).forEach(function (i) { all.push({ type: 'video', title: i.title, date: i.date, link: 'links.html' }); });
 
     // Sort by date descending
