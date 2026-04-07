@@ -1,330 +1,81 @@
 {
-  "gallery": [
-    {
-      "id": "g1",
-      "title": "Golden Hour",
-      "caption": "Mountain peaks bathed in warm evening light",
-      "category": "landscape",
-      "date": "2025-12-15",
-      "thumbnail": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=90"
-    },
-    {
-      "id": "g2",
-      "title": "Neon Reflections",
-      "caption": "Rain-soaked streets reflecting city lights",
-      "category": "urban",
-      "date": "2025-11-20",
-      "thumbnail": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1400&q=90"
-    },
-    {
-      "id": "g3",
-      "title": "Still Waters",
-      "caption": "Lake reflecting the surrounding peaks at dawn",
-      "category": "landscape",
-      "date": "2025-10-08",
-      "thumbnail": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1400&q=90"
-    },
-    {
-      "id": "g4",
-      "title": "Morning Commute",
-      "caption": "The rhythm of daily life in the city",
-      "category": "street",
-      "date": "2025-09-15",
-      "thumbnail": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1400&q=90"
-    },
-    {
-      "id": "g5",
-      "title": "Forest Cathedral",
-      "caption": "Ancient trees forming a natural canopy",
-      "category": "landscape",
-      "date": "2025-08-20",
-      "thumbnail": "https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=1400&q=90"
-    },
-    {
-      "id": "g6",
-      "title": "The Reader",
-      "caption": "A quiet moment of contemplation",
-      "category": "portrait",
-      "date": "2025-07-10",
-      "thumbnail": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&q=90"
-    },
-    {
-      "id": "g7",
-      "title": "Kyoto Alley",
-      "caption": "Lanterns lighting the way through narrow streets",
-      "category": "travel",
-      "date": "2024-11-20",
-      "thumbnail": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1400&q=90"
-    },
-    {
-      "id": "g8",
-      "title": "Geometry",
-      "caption": "Architectural patterns in modern buildings",
-      "category": "urban",
-      "date": "2025-05-08",
-      "thumbnail": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=90"
-    },
-    {
-      "id": "g9",
-      "title": "Coastal Fog",
-      "caption": "Where the ocean meets the sky",
-      "category": "landscape",
-      "date": "2024-07-04",
-      "thumbnail": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&q=90"
-    },
-    {
-      "id": "g10",
-      "title": "Market Day",
-      "caption": "Colors and life at the local market",
-      "category": "street",
-      "date": "2024-06-15",
-      "thumbnail": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&q=90"
-    },
-    {
-      "id": "g11",
-      "title": "Northern Lights",
-      "caption": "Dancing colors over the Arctic",
-      "category": "travel",
-      "date": "2025-01-05",
-      "thumbnail": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1400&q=90"
-    },
-    {
-      "id": "g12",
-      "title": "Artist at Work",
-      "caption": "Creative concentration in the studio",
-      "category": "portrait",
-      "date": "2024-09-12",
-      "thumbnail": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80",
-      "full": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1400&q=90"
-    }
-  ],
+  "profile": {
+    "name": "Jeremy Lim",
+    "tagline": "Christian · Linguist · Photographer · Writer",
+    "bio": "I am Jeremy Lim, an undergraduate at International Christian University in Tokyo, studying Linguistics and Information Science. My academic interests center on computational linguistics, speech science, and low-resource language research, especially Southern Min (Hokkien).\n\nBeyond research, I am involved in photography, writing, and interdisciplinary collaboration. I am interested in how faith, technology, and human dignity interact in the age of AI.",
+    "photo": "",
+    "location": "Mitaka, Tokyo",
+    "email": "linyuhao1069@gmail.com",
+    "social": [
+      { "label": "Instagram", "url": "" },
+      { "label": "YouTube",   "url": "" },
+      { "label": "LinkedIn",  "url": "" },
+      { "label": "GitHub",    "url": "" }
+    ]
+  },
+
+  "covers": {
+    "articles": "",
+    "photos":   "",
+    "links":    ""
+  },
+
   "articles": [
     {
       "id": "ml5cbek61xe42",
       "title": "短い文章",
       "date": "2026-02-02",
-      "excerpt": "この短い文章は、私の人生に与えられた、最も大切な宝を振り返り、神の御前で感\n謝をささげ、その恵みをあなたと分かち合うために記したものです。",
-      "content": "この短い文章は、私の人生に与えられた、最も大切な宝を振り返り、神の御前で感\n謝をささげ、その恵みをあなたと分かち合うために記したものです。\n私は一人っ子政策のもとで育ち、家族全員から深い愛情を受ける一方で、大きな期\n待も背負ってきました。その重い期待によって次第に自分の価値を見失うようになり\nました。また、精神的に背伸びしようとすることが、同世代との距離を生む一因とも\nなりました。家族や親族の間に共通していたのは、中国の伝統的な価値観に基づく\n、「惟有読書高（学問こそが最も尊い）」という考え方でした。受験競争に勝ち、名\n門大学へ進学し、将来は家族を支えることが人生の当然の道とされていましたが、そ\nの道を私は歩み続けることができませんでした。\n中学時代、過酷な勉強といじめによって、心身は限界に達しました。学校を避ける\nために精神疾患のふりをした結果、本当に病気だと受け取られ、入院することになり\n、精神を安定させる薬を服用するようになりました。その後、双極性障害と診断され\n、生きる意味を見失うほど追い詰められ、死を考えたこともありました。\n人は行き止まりに立たされたとき、神の働きが始まります。ある日、強く心を動か\nされ、家にあった古い聖書を手に取りました。読み進めるうちに、まるで天から注が\nれるかのような平安が、私の心を満たしていきました。\nコロナ禍の後、教会青年会のリーダーが私に福音を語り、罪からの悔い改めと新し\nい命への招きへと導いてくれました。主にある兄弟姉妹の生き方を通して、神の愛と\n義、そして恵みを実感し、イエス・キリストこそが人生の道であり、真理であり、命\nであると確信するようになりました。十字架の贖いを通して神の子とされたことがも\nたらした最大の慰めは、私の価値が行いや他人の評価によるのではなく、存在そのも\nのによって、天地を創造された神に無条件に愛されているという事実です。それ以来\n、イエスの愛と救いを思い起こすたびに、心の奥から平安と喜びが泉のように湧き続\nけています。\nしかし、これは私の新しくされた人生の、ほんの始まりに過ぎません。プラトンの\n「洞窟の比喩」における、解放された囚人のように、私の使命は、自分が見た光と真\n理を携えて洞窟へ戻り、ただの「影」を現実だと信じて縛られている人々に、それを\n伝えることだと強く心に迫ってきました。この思いは高慢から生まれたものではあり\nません。それは、主イエスが私に与えてくださった使命への応答です。\nその方法は、信仰を無理に他者に押しつけることではなく、これまで神から受けて\nきた、満ちあふれる愛を、言葉と行いを通して隣人に分かち合うことです。なぜなら\n、人が悔い改め、イエスを信じるに至るのは聖霊の働きによるものであり、私に求め\nられているのは、聖霊と共に働き、神を信頼して委ねることだからです。\n\nただし、この道は世の価値観から見れば、決して楽なものではなく、むしろ苦難に\n満ちています。聖書に記されているとおり、歴代の預言者や信仰者の多くは、石で打\nたれ、のこぎりで引かれ、剣に倒れるなど、迫害と虐待を受けてきました。十二使徒\nの大半が殉教し、日本においても、豊臣秀吉の禁教令の下、長崎で磔刑に処された二\n十六人の殉教者のように、信仰のために命を捧げた者は少なくありません。\nさらに中国のキリスト教史を振り返ると、約百年前、多くの宣教師たちが自国での\n安定した生活を捨て、当時貧しかった中国に渡り、福音を伝えると同時に、近代教育\nや医療をもたらしました。今日の中国における多くの名門大学や主要な病院は、その\n遺産の上に築かれています。宣教師の中には、伝染病に倒れた者や、義和団の乱で命\nを落とした者も数多くいました。しかし、そのような働きと犠牲にもかかわらず、彼\nらの証しは覆い隠され、墓は破壊され、後世において帝国主義に加担した存在、ある\nいは侵略者として語られてきました。彼らの人生は、世の基準から見れば理解しがた\nいものでしたが、その歩みは、信仰によるものでした。この世とその欲はやがて過ぎ\n去ります。そのことを知りつつ、彼らは天の故郷を望み、永遠の栄光と、「忠実な良\nい僕だ。よくやった。主人と共に喜んでくれ」という神の言葉を待ち望んでいたので\nす。\nこのような話は、キリスト者が世を捨てた狂信者になることを意味するものではあ\nりません。神は真実な方であり、地上の命を含むすべては、神との愛と交わりに比べ\nれば取るに足らないものだからです。そのために、私たちは信仰を守ります。神が私\nたちのために備えておられるのは災いではなく、平和の計画です。私たちは皆、神の\n永遠の計画の一部として用いられています。箴言が語るように、幻がなければ民は堕\n落します。しかし祈るならば、召命と賜物が示され、人生は祝福に満たされていきま\nす。\n私が自覚している召命は、東アジアでの伝道、少数言語の研究と聖書・信仰書の翻\n訳、日中の和解、そして教会の一致です。しかし、それは自分の使命を過大に考え、\n絶対化することではなく、主の前にへりくだり、与えられた力の範囲で仕えることだ\nと考えています。\n明日のことは分かりません。しかし明日は神の御手の中にあります。ですから、ど\nのような状況にあっても平安を保ち、日々の光と人々の笑顔の中に感謝と喜びを見い\nだして生きていきます。信仰を通して、これからも、より豊かに主の愛を受け、より\n深く主を愛し、より力強く主の愛を証ししていきたいと願っています。",
-      "tags": [
-        "Faith"
-      ],
-      "featured": false,
-      "image": ""
+      "cover": "",
+      "tags": ["Faith"],
+      "excerpt": "この短い文章は、私の人生に与えられた、最も大切な宝を振り返り、神の御前で感謝をささげ、その恵みをあなたと分かち合うために記したものです。",
+      "content": "この短い文章は、私の人生に与えられた、最も大切な宝を振り返り、神の御前で感\n謝をささげ、その恵みをあなたと分かち合うために記したものです。\n私は一人っ子政策のもとで育ち、家族全員から深い愛情を受ける一方で、大きな期\n待も背負ってきました。その重い期待によって次第に自分の価値を見失うようになり\nました。また、精神的に背伸びしようとすることが、同世代との距離を生む一因とも\nなりました。家族や親族の間に共通していたのは、中国の伝統的な価値観に基づく\n、「惟有読書高（学問こそが最も尊い）」という考え方でした。受験競争に勝ち、名\n門大学へ進学し、将来は家族を支えることが人生の当然の道とされていましたが、そ\nの道を私は歩み続けることができませんでした。"
     },
     {
       "id": "a1",
       "title": "On the Art of Seeing",
       "date": "2026-01-15",
-      "excerpt": "Photography is not about cameras—it's about attention. The best photographs come from a willingness to slow down and truly observe the world around us. In this essay, I explore what it means to \"see\" in a world saturated with images.",
-      "content": "<p>Photography is not about cameras—it's about attention. The best photographs come from a willingness to slow down and truly observe the world around us.</p><p>In this essay, I explore what it means to \"see\" in a world saturated with images, and how the practice of photography has taught me to be more present.</p><p>We live in an age of unprecedented visual noise. Millions of images are uploaded every minute, yet how many of them truly capture something meaningful? The answer, I believe, lies not in better equipment or more advanced techniques, but in a more fundamental shift: learning to see.</p>",
-      "tags": [
-        "Photography",
-        "Essay",
-        "Creativity"
-      ],
-      "featured": true,
-      "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=700&q=80"
+      "cover": "",
+      "tags": ["Photography", "Essay"],
+      "excerpt": "Photography is not about cameras — it's about attention. The best photographs come from a willingness to slow down and truly observe the world around us.",
+      "content": "Photography is not about cameras — it's about attention. The best photographs come from a willingness to slow down and truly observe the world around us.\n\nIn this essay, I explore what it means to \"see\" in a world saturated with images, and how the practice of photography has taught me to be more present.\n\nWe live in an age of unprecedented visual noise. Millions of images are uploaded every minute, yet how many of them truly capture something meaningful? The answer, I believe, lies not in better equipment or more advanced techniques, but in a more fundamental shift: learning to see."
     },
     {
       "id": "a2",
       "title": "Silence and the City",
       "date": "2025-12-28",
-      "excerpt": "In the noisiest places, I've found the most profound silence. A reflection on finding peace in urban landscapes and the spaces between the noise.",
-      "content": "<p>In the noisiest places, I've found the most profound silence. A reflection on finding peace in urban landscapes and the spaces between the noise. How cities teach us about solitude in unexpected ways.</p>",
-      "tags": [
-        "Personal",
-        "Reflection"
-      ],
-      "featured": false,
-      "image": ""
+      "cover": "",
+      "tags": ["Personal", "Reflection"],
+      "excerpt": "In the noisiest places, I've found the most profound silence. A reflection on finding peace in urban landscapes.",
+      "content": "In the noisiest places, I've found the most profound silence. A reflection on finding peace in urban landscapes and the spaces between the noise.\n\nHow cities teach us about solitude in unexpected ways."
     },
     {
       "id": "a3",
       "title": "The Photographer's Paradox",
       "date": "2025-11-10",
+      "cover": "",
+      "tags": ["Photography", "Philosophy"],
       "excerpt": "To photograph a moment is to step outside of it. I wrestle with the tension between experiencing life directly and the compulsion to document it.",
-      "content": "<p>To photograph a moment is to step outside of it. I wrestle with the tension between experiencing life directly and the compulsion to document it. Is the camera a bridge to the world, or a barrier?</p>",
-      "tags": [
-        "Photography",
-        "Philosophy"
-      ],
-      "featured": false,
-      "image": ""
-    },
-    {
-      "id": "a4",
-      "title": "Lessons from Film",
-      "date": "2025-10-05",
-      "excerpt": "Returning to analog photography after years of digital changed how I approach every shot. With only 36 frames per roll, each press of the shutter becomes a deliberate act.",
-      "content": "<p>Returning to analog photography after years of digital changed how I approach every shot. With only 36 frames per roll, each press of the shutter becomes a deliberate act. What film taught me about patience, intention, and letting go.</p>",
-      "tags": [
-        "Photography",
-        "Film"
-      ],
-      "featured": false,
-      "image": ""
-    },
-    {
-      "id": "a5",
-      "title": "Maps and Territories",
-      "date": "2025-09-18",
-      "excerpt": "On the difference between the map and the territory, and why getting lost is sometimes the most direct route to where you need to be.",
-      "content": "<p>On the difference between the map and the territory, and why getting lost is sometimes the most direct route to where you need to be. Reflections from a month of wandering through Southeast Asia.</p>",
-      "tags": [
-        "Travel",
-        "Personal"
-      ],
-      "featured": false,
-      "image": ""
-    },
-    {
-      "id": "a6",
-      "title": "On Craft and Practice",
-      "date": "2025-08-02",
-      "excerpt": "Creativity isn't a lightning strike—it's a daily practice. I share my routines, the role of boredom in creative work, and why showing up consistently matters more than waiting for inspiration.",
-      "content": "<p>Creativity isn't a lightning strike—it's a daily practice. I share my routines, the role of boredom in creative work, and why showing up consistently matters more than waiting for inspiration.</p>",
-      "tags": [
-        "Creativity",
-        "Process"
-      ],
-      "featured": false,
-      "image": ""
-    },
-    {
-      "id": "a7",
-      "title": "What the Light Reveals",
-      "date": "2025-06-20",
-      "excerpt": "An exploration of light as both a physical phenomenon and a metaphor. How chasing golden hour taught me that the most beautiful things are often the most fleeting.",
-      "content": "<p>An exploration of light as both a physical phenomenon and a metaphor. How chasing golden hour taught me that the most beautiful things are often the most fleeting, and why that's exactly what makes them worth pursuing.</p>",
-      "tags": [
-        "Photography",
-        "Essay"
-      ],
-      "featured": false,
-      "image": ""
+      "content": "To photograph a moment is to step outside of it. I wrestle with the tension between experiencing life directly and the compulsion to document it. Is the camera a bridge to the world, or a barrier?"
     }
   ],
+
+  "photos": [
+    { "file": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80", "caption": "Golden Hour", "date": "2025-12-15" },
+    { "file": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=900&q=80", "caption": "Neon Reflections", "date": "2025-11-20" },
+    { "file": "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=900&q=80", "caption": "Still Waters", "date": "2025-10-08" },
+    { "file": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=900&q=80", "caption": "Morning Commute", "date": "2025-09-15" },
+    { "file": "https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=900&q=80", "caption": "Forest Cathedral", "date": "2025-08-20" },
+    { "file": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=80", "caption": "Kyoto Alley", "date": "2024-11-20" },
+    { "file": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80", "caption": "Geometry", "date": "2025-05-08" },
+    { "file": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80", "caption": "Coastal Fog", "date": "2024-07-04" },
+    { "file": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=900&q=80", "caption": "Northern Lights", "date": "2025-01-05" }
+  ],
+
   "links": [
-    {
-      "id": "l1",
-      "title": "Instagram",
-      "description": "Daily photography, behind-the-scenes, and visual stories.",
-      "url": "#",
-      "handle": "@jeremylim",
-      "icon": "instagram",
-      "category": "social"
-    },
-    {
-      "id": "l2",
-      "title": "Twitter / X",
-      "description": "Thoughts, threads, and conversations about photography and creativity.",
-      "url": "#",
-      "handle": "@jeremylim",
-      "icon": "twitter",
-      "category": "social"
-    },
-    {
-      "id": "l3",
-      "title": "YouTube",
-      "description": "Video essays, photography walkthroughs, and travel vlogs.",
-      "url": "#",
-      "handle": "youtube.com/@jeremylim",
-      "icon": "youtube",
-      "category": "social"
-    },
-    {
-      "id": "l4",
-      "title": "LinkedIn",
-      "description": "Professional profile, work history, and collaborations.",
-      "url": "#",
-      "handle": "linkedin.com/in/jeremylim",
-      "icon": "linkedin",
-      "category": "social"
-    },
-    {
-      "id": "l5",
-      "title": "GitHub",
-      "description": "Open source projects, code, and creative tools.",
-      "url": "#",
-      "handle": "github.com/jeremylim",
-      "icon": "github",
-      "category": "social"
-    },
-    {
-      "id": "l6",
-      "title": "Newsletter",
-      "description": "Monthly dispatches on photography, reading, and creative life.",
-      "url": "#",
-      "handle": "Subscribe via email",
-      "icon": "mail",
-      "category": "social"
-    }
-  ],
-  "videos": [
-    {
-      "id": "v1",
-      "title": "The Art of Street Photography",
-      "description": "Exploring the streets of Tokyo with a film camera — tips, techniques, and reflections.",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "date": "2025-10-22"
-    },
-    {
-      "id": "v2",
-      "title": "Finding Light: A Photography Essay",
-      "description": "A visual essay on chasing natural light across different landscapes and seasons.",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "date": "2025-07-15"
-    },
-    {
-      "id": "v3",
-      "title": "My Creative Workflow",
-      "description": "From raw capture to final edit — a behind-the-scenes look at my photography process.",
-      "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-      "date": "2025-03-12"
-    }
-  ],
-  "audio": [],
-  "recommendations": [
-    {
-      "id": "r1",
-      "quote": "Jeremy has an extraordinary eye for detail and a rare ability to capture emotion in every frame. Working with him was an absolute pleasure.",
-      "name": "[Name]",
-      "role": "[Title, Organization]",
-      "avatar": ""
-    },
-    {
-      "id": "r2",
-      "quote": "His writing is thoughtful, precise, and deeply engaging. Jeremy brings a unique perspective that always leaves you thinking long after you've finished reading.",
-      "name": "[Name]",
-      "role": "[Title, Organization]",
-      "avatar": ""
-    },
-    {
-      "id": "r3",
-      "quote": "A true creative who understands both the art and craft of visual storytelling. Jeremy's portfolio speaks for itself—every piece is intentional and beautiful.",
-      "name": "[Name]",
-      "role": "[Title, Organization]",
-      "avatar": ""
-    }
-  ],
-  "profile": {
-    "name": "Jeremy Lim",
-    "title": "Christian/Photographer/Writer/Creative",
-    "bio": "I am Jeremy Lim, an undergraduate at International Christian University in Tokyo, studying Linguistics and Information Science. My academic interests center on computational linguistics, speech science, and low-resource language research, especially Southern Min (Hokkien).\n\nBeyond research, I am involved in photography, writing, and interdisciplinary collaboration. I am interested in how faith, technology, and human dignity interact in the age of AI, and I hope to create work that is both intellectually rigorous and socially meaningful.",
-    "location": "Mitaka, Tokyo",
-    "email": "linyuhao1069@gmail.com",
-    "focus": "Photography, Writing, Visual Art",
-    "photo": "https://drive.google.com/file/d/17CuZTxsSSNnHcO8SSYVem4Ju5aF3PIvw/view?usp=sharing"
-  }
+    { "title": "Instagram",  "url": "", "icon": "instagram", "note": "Daily photography and visual stories" },
+    { "title": "YouTube",    "url": "", "icon": "youtube",   "note": "Video essays and photography walkthroughs" },
+    { "title": "LinkedIn",   "url": "", "icon": "linkedin",  "note": "Professional profile and collaborations" },
+    { "title": "GitHub",     "url": "", "icon": "github",    "note": "Code and open-source projects" },
+    { "title": "Email",      "url": "mailto:linyuhao1069@gmail.com", "icon": "mail", "note": "linyuhao1069@gmail.com" }
+  ]
 }

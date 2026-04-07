@@ -4,235 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Links — Jeremy Lim</title>
-  <meta name="description" content="Social media, videos, and useful links by Jeremy Lim.">
+  <meta name="description" content="Links and social media by Jeremy Lim.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Jeremy Lim</a>
       <div class="nav__links">
-        <a href="index.html" class="nav__link">Home</a>
-        <a href="gallery.html" class="nav__link">Gallery</a>
-        <a href="writing.html" class="nav__link">Writing</a>
-        <a href="audio.html" class="nav__link">Audio</a>
-        <a href="links.html" class="nav__link nav__link--active">Links</a>
-        <a href="archive.html" class="nav__link">Archive</a>
+        <a href="index.html"    class="nav__link">Home</a>
+        <a href="articles.html" class="nav__link">Articles</a>
+        <a href="gallery.html"  class="nav__link">Photos</a>
+        <a href="links.html"    class="nav__link nav__link--active">Links</a>
       </div>
-      <div class="nav__actions">
-        <button class="theme-toggle" aria-label="Toggle theme">
-          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      <div class="nav__controls">
+        <button class="theme-btn" aria-label="Toggle theme">
+          <svg class="icon-sun"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
         </button>
-        <button class="nav__toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <button class="nav__toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
     </div>
-    <div class="nav__mobile-menu">
-      <a href="index.html" class="nav__link">Home</a>
-      <a href="gallery.html" class="nav__link">Gallery</a>
-      <a href="writing.html" class="nav__link">Writing</a>
-      <a href="audio.html" class="nav__link">Audio</a>
-      <a href="links.html" class="nav__link nav__link--active">Links</a>
-      <a href="archive.html" class="nav__link">Archive</a>
+    <div class="nav__mobile">
+      <a href="index.html"    class="nav__link">Home</a>
+      <a href="articles.html" class="nav__link">Articles</a>
+      <a href="gallery.html"  class="nav__link">Photos</a>
+      <a href="links.html"    class="nav__link">Links</a>
     </div>
   </nav>
 
-  <!-- Page Header -->
   <header class="page-header">
-    <div class="container">
-      <h1 class="page-header__title animate-in">Links</h1>
-      <p class="page-header__subtitle animate-in">
-        Find me around the internet — social media, videos, and other places I share work.
-      </p>
+    <div class="container container--narrow">
+      <div class="section-label">Connect</div>
+      <h1>Links</h1>
+      <p>Where to find me online.</p>
+
+      <!-- How to add a link -->
+      <div class="upload-hint">
+        <strong>To add or edit a link:</strong> open <code>data/content.json</code> on GitHub and edit the <code>"links"</code> array. Each item needs a <code>title</code>, <code>url</code>, <code>icon</code> (<code>instagram</code> / <code>youtube</code> / <code>linkedin</code> / <code>github</code> / <code>mail</code>), and a <code>note</code> description.
+      </div>
     </div>
   </header>
 
-  <!-- Social Media Links -->
-  <section class="section" style="padding-top: 0;">
-    <div class="container">
-      <div class="section__header reveal">
-        <div class="section__label">Social</div>
-        <h2 class="section__title">Find Me Online</h2>
-      </div>
-
-      <div class="links-grid reveal" id="links-grid">
-
-        <a href="#" class="link-card" target="_blank" rel="noopener noreferrer">
-          <div class="link-card__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-          </div>
-          <div>
-            <div class="link-card__title">Instagram</div>
-            <div class="link-card__desc">Daily photography, behind-the-scenes, and visual stories.</div>
-            <div class="link-card__url">@jeremylim</div>
-          </div>
-        </a>
-
-        <a href="#" class="link-card" target="_blank" rel="noopener noreferrer">
-          <div class="link-card__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-          </div>
-          <div>
-            <div class="link-card__title">Twitter / X</div>
-            <div class="link-card__desc">Thoughts, threads, and conversations about photography and creativity.</div>
-            <div class="link-card__url">@jeremylim</div>
-          </div>
-        </a>
-
-        <a href="#" class="link-card" target="_blank" rel="noopener noreferrer">
-          <div class="link-card__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg>
-          </div>
-          <div>
-            <div class="link-card__title">YouTube</div>
-            <div class="link-card__desc">Video essays, photography walkthroughs, and travel vlogs.</div>
-            <div class="link-card__url">youtube.com/@jeremylim</div>
-          </div>
-        </a>
-
-        <a href="#" class="link-card" target="_blank" rel="noopener noreferrer">
-          <div class="link-card__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </div>
-          <div>
-            <div class="link-card__title">LinkedIn</div>
-            <div class="link-card__desc">Professional profile, work history, and collaborations.</div>
-            <div class="link-card__url">linkedin.com/in/jeremylim</div>
-          </div>
-        </a>
-
-        <a href="#" class="link-card" target="_blank" rel="noopener noreferrer">
-          <div class="link-card__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-          </div>
-          <div>
-            <div class="link-card__title">GitHub</div>
-            <div class="link-card__desc">Open source projects, code, and creative tools.</div>
-            <div class="link-card__url">github.com/jeremylim</div>
-          </div>
-        </a>
-
-        <a href="#" class="link-card" target="_blank" rel="noopener noreferrer">
-          <div class="link-card__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <div>
-            <div class="link-card__title">Newsletter</div>
-            <div class="link-card__desc">Monthly dispatches on photography, reading, and creative life.</div>
-            <div class="link-card__url">Subscribe via email</div>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Videos Section -->
-  <section class="section section--alt">
-    <div class="container">
-      <div class="section__header reveal">
-        <div class="section__label">Video</div>
-        <h2 class="section__title">Featured Videos</h2>
-        <p class="section__description">Video essays and visual stories from my YouTube channel.</p>
-      </div>
-
-      <div class="video-grid reveal" id="video-grid">
-
-        <div class="video-card">
-          <div class="video-card__embed">
-            <!-- Replace with your YouTube embed URL -->
-            <iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-card__info">
-            <div class="video-card__title">The Art of Street Photography</div>
-            <div class="video-card__desc">Exploring the streets of Tokyo with a film camera — tips, techniques, and reflections.</div>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <div class="video-card__embed">
-            <iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-card__info">
-            <div class="video-card__title">Finding Light: A Photography Essay</div>
-            <div class="video-card__desc">A visual essay on chasing natural light across different landscapes and seasons.</div>
-          </div>
-        </div>
-
-        <div class="video-card">
-          <div class="video-card__embed">
-            <iframe src="about:blank" data-src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <div class="video-card__info">
-            <div class="video-card__title">My Creative Workflow</div>
-            <div class="video-card__desc">From raw capture to final edit — a behind-the-scenes look at my photography process.</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Other Resources -->
-  <section class="section">
+  <section class="links-page">
     <div class="container container--narrow">
-      <div class="section__header reveal">
-        <div class="section__label">Resources</div>
-        <h2 class="section__title">Other Places</h2>
-      </div>
-
-      <div class="articles-list reveal">
-        <a href="#" class="article-card" target="_blank" rel="noopener noreferrer">
-          <div>
-            <h3 class="article-card__title">Unsplash</h3>
-            <p class="article-card__excerpt">Free high-resolution photos available for download and use.</p>
-            <div class="article-card__tags"><span class="tag">Photography</span></div>
-          </div>
-        </a>
-        <a href="#" class="article-card" target="_blank" rel="noopener noreferrer">
-          <div>
-            <h3 class="article-card__title">500px</h3>
-            <p class="article-card__excerpt">Full photography portfolio with licensing options.</p>
-            <div class="article-card__tags"><span class="tag">Portfolio</span></div>
-          </div>
-        </a>
-        <a href="#" class="article-card" target="_blank" rel="noopener noreferrer">
-          <div>
-            <h3 class="article-card__title">Medium</h3>
-            <p class="article-card__excerpt">Long-form articles and essays on photography and creativity.</p>
-            <div class="article-card__tags"><span class="tag">Writing</span></div>
-          </div>
-        </a>
-      </div>
+      <div class="link-list" id="links-list"></div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <span class="footer__text">&copy; 2026 Jeremy Lim. All rights reserved.</span>
-        <div class="footer__links">
-          <a href="index.html" class="footer__link">Home</a>
-          <a href="gallery.html" class="footer__link">Gallery</a>
-          <a href="writing.html" class="footer__link">Writing</a>
-          <a href="links.html" class="footer__link">Links</a>
-          <a href="archive.html" class="footer__link">Archive</a>
+        <span>&copy; <span id="yr"></span> Jeremy Lim</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="gallery.html">Photos</a>
         </div>
       </div>
     </div>
   </footer>
 
   <button class="back-to-top" aria-label="Back to top">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
   </button>
 
-  <script src="js/main.js"></script>
-  <script src="js/content-loader.js"></script>
+  <script src="js/app.js"></script>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>

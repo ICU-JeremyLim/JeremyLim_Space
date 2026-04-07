@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photos — Jeremy Lim</title>
-  <meta name="description" content="Photography by Jeremy Lim.">
+  <title>Articles — Jeremy Lim</title>
+  <meta name="description" content="Essays and articles by Jeremy Lim.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
@@ -17,8 +17,8 @@
       <a href="index.html" class="nav__logo">Jeremy Lim</a>
       <div class="nav__links">
         <a href="index.html"    class="nav__link">Home</a>
-        <a href="articles.html" class="nav__link">Articles</a>
-        <a href="gallery.html"  class="nav__link nav__link--active">Photos</a>
+        <a href="articles.html" class="nav__link nav__link--active">Articles</a>
+        <a href="gallery.html"  class="nav__link">Photos</a>
         <a href="links.html"    class="nav__link">Links</a>
       </div>
       <div class="nav__controls">
@@ -38,32 +38,23 @@
   </nav>
 
   <header class="page-header">
-    <div class="container">
-      <div class="section-label">Photography</div>
-      <h1>Photos</h1>
-      <p>A collection of moments through the lens.</p>
+    <div class="container container--narrow">
+      <div class="section-label">Writing</div>
+      <h1>Articles</h1>
+      <p>Essays, reflections, and long-form writing.</p>
 
-      <!-- How to add a photo -->
+      <!-- How to add an article -->
       <div class="upload-hint">
-        <strong>To add a photo:</strong> upload the image to <code>images/gallery/</code> on GitHub, then add <code>{"file": "images/gallery/your-photo.jpg", "caption": "Caption", "date": "YYYY-MM-DD"}</code> to the <code>"photos"</code> array in <code>data/content.json</code>.
+        <strong>To add an article:</strong> open <code>data/content.json</code> on GitHub, add an object to the <code>"articles"</code> array with fields: <code>title</code>, <code>date</code>, <code>excerpt</code>, <code>content</code>, <code>tags</code>. Optionally add a <code>cover</code> image path. Commit → done.
       </div>
     </div>
   </header>
 
-  <section class="gallery">
-    <div class="container">
-      <div class="photo-grid" id="photo-grid"></div>
+  <section class="articles">
+    <div class="container container--narrow">
+      <div id="articles-list"></div>
     </div>
   </section>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" id="lb-close" aria-label="Close">&times;</button>
-    <button class="lightbox__nav lightbox__prev" id="lb-prev" aria-label="Previous">&#8249;</button>
-    <img id="lb-img" src="" alt="">
-    <button class="lightbox__nav lightbox__next" id="lb-next" aria-label="Next">&#8250;</button>
-    <div class="lightbox__caption" id="lb-caption"></div>
-  </div>
 
   <footer class="footer">
     <div class="container">
@@ -71,7 +62,7 @@
         <span>&copy; <span id="yr"></span> Jeremy Lim</span>
         <div style="display:flex;gap:1.5rem;">
           <a href="index.html">Home</a>
-          <a href="articles.html">Articles</a>
+          <a href="gallery.html">Photos</a>
           <a href="links.html">Links</a>
         </div>
       </div>
