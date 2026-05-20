@@ -3,7 +3,7 @@
     "name": "Jeremy Lim",
     "tagline": "Christian · Linguist · Photographer · Writer",
     "bio": "I am Jeremy Lim, an undergraduate at International Christian University in Tokyo, studying Linguistics and Information Science. My academic interests center on computational linguistics, speech science, and low-resource language research, especially Southern Min (Hokkien).\n\nBeyond research, I am involved in photography, writing, and interdisciplinary collaboration. I am interested in how faith, technology, and human dignity interact in the age of AI.",
-    "photo": "images/profile/jeremy.jpg",
+    "photo": "images/profile/profile.jpg",
     "location": "Mitaka, Tokyo",
     "email": "linyuhao1069@gmail.com",
     "social": [
@@ -13,6 +13,8 @@
   },
 
   "cv": [
+    { "year": "2026–2027", "title": "Exchange Student, School of Informatics",        "org": "University of Edinburgh",                          "type": "education" },
+    { "year": "2025–2026", "title": "Learning Supporter, Quantitative Skills Support", "org": "ICU Teaching and Learning Center",                 "type": "work"      },
     { "year": "2026",      "title": "Organizer, Faith × Research Symposium",       "org": "ICU C-Week",                                      "type": "community" },
     { "year": "2026",      "title": "Paper presented at HIS PhonCog 2026 (#141)",  "org": "Phonological Cognition · Southern Min (Hokkien)",  "type": "research"  },
     { "year": "2025–2026", "title": "Host, Alpha Course",                          "org": "International Christian University",               "type": "faith"     },
