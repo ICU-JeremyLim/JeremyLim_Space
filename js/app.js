@@ -150,6 +150,21 @@
       }).join('');
     }
 
+    // CV Timeline
+    var cvList = document.getElementById('cv-list');
+    if (cvList && data.cv && data.cv.length) {
+      cvList.innerHTML = data.cv.map(function (item) {
+        return '<div class="cv-item">' +
+          '<div class="cv-year">' + esc(item.year) + '</div>' +
+          '<div class="cv-body">' +
+            '<span class="cv-title">' + esc(item.title) + '</span>' +
+            '<span class="cv-badge cv-badge--' + esc(item.type) + '">' + esc(item.type) + '</span>' +
+            (item.org ? '<span class="cv-org">' + esc(item.org) + '</span>' : '') +
+          '</div>' +
+        '</div>';
+      }).join('');
+    }
+
     // Module covers
     var covers = data.covers || {};
     ['articles', 'photos', 'links'].forEach(function (key) {

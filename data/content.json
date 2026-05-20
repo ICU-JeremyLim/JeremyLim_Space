@@ -12,6 +12,17 @@
     ]
   },
 
+  "cv": [
+    { "year": "2026",      "title": "Organizer, Faith × Research Symposium",       "org": "ICU C-Week",                                      "type": "community" },
+    { "year": "2026",      "title": "Paper presented at HIS PhonCog 2026 (#141)",  "org": "Phonological Cognition · Southern Min (Hokkien)",  "type": "research"  },
+    { "year": "2025–2026", "title": "Host, Alpha Course",                          "org": "International Christian University",               "type": "faith"     },
+    { "year": "2025",      "title": "Dean's List, Winter Semester",                "org": "International Christian University",               "type": "award"     },
+    { "year": "2025",      "title": "Served at ICU Worship Night",                 "org": "International Christian University",               "type": "faith"     },
+    { "year": "2024–2028", "title": "BA Linguistics & Information Science",        "org": "International Christian University, Tokyo",        "type": "education" },
+    { "year": "2024",      "title": "Dean's List, Winter Semester",                "org": "International Christian University",               "type": "award"     },
+    { "year": "2023",      "title": "Baptism",                                     "org": "",                                                "type": "faith"     }
+  ],
+
   "covers": {
     "articles": "",
     "photos":   "",

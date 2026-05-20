@@ -252,6 +252,77 @@ ul { list-style: none; }
   .profile__meta, .profile__socials { justify-content: center; }
 }
 
+/* --- CV Timeline --- */
+.cv-section {
+  padding: 0 0 4rem;
+}
+.cv-header {
+  margin-bottom: 2rem;
+}
+.cv-list {
+  border-top: 1px solid var(--border);
+}
+.cv-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+.cv-item:hover {
+  background: var(--surface);
+  margin: 0 -1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: var(--radius);
+}
+.cv-year {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  padding-top: 0.15em;
+  white-space: nowrap;
+}
+.cv-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.75rem;
+}
+.cv-title {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.cv-org {
+  font-size: 0.8rem;
+  color: var(--muted);
+  flex-basis: 100%;
+  margin-top: 0.05rem;
+}
+.cv-badge {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.15em 0.6em;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+.cv-badge--education  { background: rgba(59,130,246,0.12); color: #3b82f6; }
+.cv-badge--award      { background: rgba(234,179,8,0.14);  color: #ca8a04; }
+.cv-badge--research   { background: var(--accent-bg);      color: var(--accent); }
+.cv-badge--faith      { background: rgba(168,85,247,0.12); color: #a855f7; }
+.cv-badge--community  { background: rgba(34,197,94,0.12);  color: #16a34a; }
+.cv-badge--work       { background: rgba(20,184,166,0.12); color: #0d9488; }
+
+@media (max-width: 480px) {
+  .cv-item { grid-template-columns: 72px 1fr; gap: 0 1rem; }
+  .cv-year { font-size: 0.65rem; }
+}
+
 /* --- Module Cards (homepage) --- */
 .modules {
   padding: 0 0 5rem;
