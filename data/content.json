@@ -3,14 +3,12 @@
     "name": "Jeremy Lim",
     "tagline": "Christian · Linguist · Photographer · Writer",
     "bio": "I am Jeremy Lim, an undergraduate at International Christian University in Tokyo, studying Linguistics and Information Science. My academic interests center on computational linguistics, speech science, and low-resource language research, especially Southern Min (Hokkien).\n\nBeyond research, I am involved in photography, writing, and interdisciplinary collaboration. I am interested in how faith, technology, and human dignity interact in the age of AI.",
-    "photo": "",
+    "photo": "images/profile/jeremy.jpg",
     "location": "Mitaka, Tokyo",
     "email": "linyuhao1069@gmail.com",
     "social": [
-      { "label": "Instagram", "url": "" },
-      { "label": "YouTube",   "url": "" },
-      { "label": "LinkedIn",  "url": "" },
-      { "label": "GitHub",    "url": "" }
+      { "label": "YouTube",  "url": "https://www.youtube.com/@JeremyLim-n6p" },
+      { "label": "GitHub",   "url": "https://github.com/ICU-JeremyLim" }
     ]
   },
 
@@ -20,15 +18,26 @@
     "links":    ""
   },
 
-  "articles": [],
+  "articles": [
+    {
+      "id": "research-hisphoncog2026",
+      "title": "Research Demo: Phonological Cognition Study (HISPhonCog 2026)",
+      "date": "2026-01-01",
+      "cover": "",
+      "tags": ["Research", "Linguistics", "Hokkien"],
+      "excerpt": "A demo and supplementary materials for my paper submitted to HIS PhonCog 2026. The research explores phonological cognition in Southern Min (Hokkien) using computational methods.",
+      "content": "A demo and supplementary materials for my paper submitted to HIS PhonCog 2026 (Paper #141).\n\nThe research explores phonological cognition in Southern Min (Hokkien) using computational methods.\n\nFull demo and code: https://github.com/ICU-JeremyLim/HISPhonCog2026Paper141"
+    }
+  ],
 
   "photos": [],
 
   "links": [
-    { "title": "Instagram",  "url": "", "icon": "instagram", "note": "Daily photography and visual stories" },
-    { "title": "YouTube",    "url": "", "icon": "youtube",   "note": "Video essays and photography walkthroughs" },
-    { "title": "LinkedIn",   "url": "", "icon": "linkedin",  "note": "Professional profile and collaborations" },
-    { "title": "GitHub",     "url": "", "icon": "github",    "note": "Code and open-source projects" },
+    { "title": "YouTube",    "url": "https://www.youtube.com/@JeremyLim-n6p", "icon": "youtube",   "note": "youtube.com/@JeremyLim-n6p" },
+    { "title": "GitHub",     "url": "https://github.com/ICU-JeremyLim",        "icon": "github",    "note": "github.com/ICU-JeremyLim" },
+    { "title": "Research",   "url": "https://github.com/ICU-JeremyLim/HISPhonCog2026Paper141", "icon": "link", "note": "HISPhonCog 2026 — Phonological Cognition Demo" },
+    { "title": "Instagram",  "url": "", "icon": "instagram", "note": "Coming soon" },
+    { "title": "LinkedIn",   "url": "", "icon": "linkedin",  "note": "Coming soon" },
     { "title": "Email",      "url": "mailto:linyuhao1069@gmail.com", "icon": "mail", "note": "linyuhao1069@gmail.com" }
   ]
 }
