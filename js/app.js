@@ -348,7 +348,9 @@
       .then(function (items) {
         var ORDER = ['Christian Faith', 'Linguistics', 'Random Topics'];
         var byCat = {};
-        items.forEach(function (it) {
+        // Unlisted entries stay in the repo and work by direct link,
+        // but are kept off the public index.
+        items.filter(function (it) { return !it.unlisted; }).forEach(function (it) {
           (byCat[it.category] = byCat[it.category] || {});
           (byCat[it.category][it.subcategory] = byCat[it.category][it.subcategory] || []).push(it);
         });
@@ -456,6 +458,15 @@
 
         document.title = it.title + ' — Jeremy Lim';
         titleEl.textContent = it.title;
+
+        // Keep flagged articles out of search results. The page still works
+        // normally for anyone who has the link.
+        if (it.noindex) {
+          var m = document.createElement('meta');
+          m.name = 'robots';
+          m.content = 'noindex, noarchive, nosnippet';
+          document.head.appendChild(m);
+        }
 
         var heroEl = document.getElementById('reader-hero');
         if (heroEl && it.cover) {

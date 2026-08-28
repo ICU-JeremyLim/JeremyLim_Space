@@ -57,9 +57,9 @@ During that time, there were times where I wanted to end my own life. I had no i
 
 One day, for some reason my heart was moved to open an old Bible that was in my house. As I read a few different verses, I felt peace from heaven flooding into my heart. 
 
-そして、もっと聖書に書かれている神様のことを知りたいと思い、教会に通い始めました。牧師の林先生は私の状況を理解し、一緒に「十字架のかげに」を歌ってくださいました。
+そして、もっと聖書に書かれている神様のことを知りたいと思い、教会に通い始めました。牧師先生は私の状況を理解し、一緒に「十字架のかげに」を歌ってくださいました。
 
-And because I wanted to know more about the God revealed in the Bible, I started going to church. The pastor, Pastor Lin, understood what I was going through, and he sang the song “Near the Cross” with me.
+And because I wanted to know more about the God revealed in the Bible, I started going to church. The pastor there understood what I was going through, and he sang the song “Near the Cross” with me.
 
 （コーラスを歌う）
 
@@ -87,9 +87,9 @@ Still, God kept loving me and did not forsake me.
 
 Two years later, the church reopened its doors. I participated in youth fellowship and learned more about the Bible and faith. 
 
-青年会のリーダーであった李姉妹は私に完全な福音を語り、「お前は罪を認め、悔い改（あらた）めて、キリストにあって新しく造られた人になるべきだ」と力強く伝えてくださいました。
+青年会のリーダーの姉妹は私に完全な福音を語り、「お前は罪を認め、悔い改（あらた）めて、キリストにあって新しく造られた人になるべきだ」と力強く伝えてくださいました。
 
-The leader of youth fellowship, Sister Li, shared the whole gospel with me. She firmly told me, “You need to recognize your sin, repent, and become a new creation in Christ.”
+The leader of the youth fellowship shared the whole gospel with me. She firmly told me, “You need to recognize your sin, repent, and become a new creation in Christ.”
 
 また、イエス・キリストを直接見ることはできませんが、青年会の兄弟姉妹たちが言葉や行動、日常の姿を通（とお）してイエスの愛を表しているのを見て、神様の愛・義・恵み・聖潔を深く感じました。
 
@@ -111,9 +111,9 @@ This is true. After becoming a real Christian, God has given me many opportuniti
 
   
 
-そのころ、田舎教会の牧師である林先生が、中国語から台湾語への説教通訳を私に任せてくださいました。
+そのころ、ある教会の牧師先生が、中国語から台湾語への説教通訳を私に任せてくださいました。
 
-At that time, Pastor Lin, who is the pastor at a church in the countryside, asked me to translate his message from Mandarin to Taiwanese. 
+At that time, a pastor I knew asked me to translate his message from Mandarin to Taiwanese. 
 
 正しく通訳するために聖書を深く読むようになり、新約聖書を十回近く通読しました。読めば読むほど御言葉への渇（かわ）きが増（ま）し、霊的にも大きく成長しました。
 
@@ -135,9 +135,9 @@ I was baptized when I was 18. At that moment, I felt God’s glory, my body bega
 
   
 
-2023年、私はYWAM（ユース・ウィズ・ア・ミッション）の宣教師である邱牧師と出会いました。
+2023年、私はある宣教師の先生と出会いました。
 
-In 2023, I met Pastor Khoo, a missionary with YWAM (Youth With A Mission). 
+In 2023, I met a missionary. 
 
 彼が私のために祈っていたとき、一つの幻（まぼろし）を見たと言いました。それは、ジェレミーがギターを持ち、ワーシップを歌いながら、いろいろな国の人たちと共に福音を伝えている姿でした。
 
@@ -153,21 +153,21 @@ Since then, I have strongly felt that I am called to evangelize, and began shari
 
   
 
-私の祖母は仏（ぶ）教徒の家族で育ち、福音を聞いたことがありませんでした。二年前、大腸がんと診断され、手術（しゅじゅつ）の前夜に強い不安を抱（かか）えていました。
+私の祖母は仏（ぶ）教徒の家族で育ち、福音を聞いたことがありませんでした。二年前、重い病気になり、その前夜に強い不安を抱（かか）えていました。
 
-My grandmother grew up in a Buddhist household, and had never heard the gospel. Two years ago, she was diagnosed with colon cancer, and the night before her surgery, she was very anxious. 
+My grandmother grew up in a Buddhist household, and had never heard the gospel. Two years ago she became seriously ill, and the night before she went into hospital she was very anxious. 
 
 私は人の弱みに付け込んで、祖母にこう伝えました。「イエスはあなたを愛しています。イエスを信じるなら、暗闇から解放され、平安と喜びに満たされます。愛の中には恐れがありません。一緒に祈りましょう。」
 
 I told my grandmother, “Jesus loves you. If you believe in Jesus, you will be set free from the darkness and filled with peace and joy. There is no fear in love. Let’s pray together.”
 
-祖母は「はい」と答え、イエス・キリストを救い主として受け入れました。手術は無事に終わり、祖母は少しずつ回復しました。
+祖母は「はい」と答え、イエス・キリストを救い主として受け入れました。その後、祖母は少しずつ回復しました。
 
-My grandmother said yes, and received Jesus Christ as her Savior. Her surgery was successful, and she slowly recovered. 
+My grandmother said yes, and received Jesus Christ as her Savior. She recovered slowly afterwards. 
 
-それからは毎日、家で聖書を読み、讃美歌を歌うようになりました。病院で再診を受けるときには不安を感じるそうですが、讃美歌を歌うと天からの平安が心に注がれると語ってくれました。
+それからは毎日、家で聖書を読み、讃美歌を歌うようになりました。不安を感じるときにも、讃美歌を歌うと天からの平安が心に注がれると語ってくれました。
 
-Since then, she reads her Bible every day at home and sings hymns. She told me that she feels anxious before her follow-up examinations, but when she sings hymns she receives peace from heaven in her heart.
+Since then, she reads her Bible every day at home and sings hymns. She told me that when she feels anxious, singing hymns brings peace from heaven into her heart.
 
   
 
@@ -187,13 +187,13 @@ When they were experiencing deep sadness, I sent them the songs “What a Friend
 
 And they each went to church, and some became Christian.
 
-左の写真は、二人の友人がクリスマス礼拝でイエス・キリストを自分の主と救い主受け入れる祈りをしている時の様子です。
 
-The picture on the left is two of my friends praying and receiving Jesus as their Lord and Savior during a Christmas service. 
 
-右の写真は、彼らと一緒に讃美している姿です。彼らが福音を聞いて救われたのは、私自身の力ではなく、聖霊の働きによるものです。
+ 
 
-The right is us worshipping together. They heard the gospel and were saved, not by my strength, but by the work of the Holy Spirit.
+彼らが福音を聞いて救われたのは、私自身の力ではなく、聖霊の働きによるものです。
+
+They heard the gospel and were saved, not by my strength, but by the work of the Holy Spirit.
 
   
 

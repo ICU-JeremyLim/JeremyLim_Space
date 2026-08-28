@@ -24,12 +24,12 @@ As a human, I couldn't find God with my own strength. But the Son of Man—Jesus
 
 But only three months later, COVID-19 hit. Churches shut down. At that time, I did not have strong faith. I drifted away from God and fell into sin.
 
-Two years later, in March 2022, churches reopened. The youth leaders, sister Lee, in a church shared the full gospel with me, and I truly confessed, repented, and found freedom in Christ. As it says in 2 Timothy 2:21,  
+Two years later, in March 2022, churches reopened. A youth leader at the church shared the full gospel with me, and I truly confessed, repented, and found freedom in Christ. As it says in 2 Timothy 2:21,  
 “Therefore, if anyone cleanses himself from what is dishonorable, he will be a vessel for honorable use, set apart as holy, useful to the Master, ready for every good work.”
 
-Around that time, a rural pastor invited me to translate his sermons from Mandarin to Hokkien dialect (Taiwanese). Another small church asked me to help them build a worship team. A few months later, yet another church invited me to be a youth group leader. I ended up serving in three different churches each week. My spiritual life grew quickly. To translate well, I had to read the Bible deeply—I read the New Testament almost ten times. The more I read, the hungrier I became for God’s Word.
+Around that time, a pastor invited me to translate his sermons from Mandarin to Hokkien (Taiwanese). Another small church asked me to help them build a worship team. A few months later, yet another church invited me to be a youth group leader. I ended up serving in three different churches each week. My spiritual life grew quickly. To translate well, I had to read the Bible deeply—I read the New Testament almost ten times. The more I read, the hungrier I became for God’s Word.
 
-At first, my family didn’t understand my faith. But over time, they saw the transformation in me. One by one, my parents believed in Jesus, my grandmother believed, my aunt believed, and even my close friends became Christians.  
+At first, my family didn’t understand my faith. But over time, they saw the transformation in me, and in time some of those closest to me came to share it.  
 During that time, there was one Bible verse that kept echoing in my heart every night: Mark 16:15  
 “Go into all the world and proclaim the gospel to all creation.”
 
@@ -38,7 +38,7 @@ I prayed, “Lord, what can I do for You? I’m weak and unworthy.” At that ti
 So I made a covenant in prayer with God: “Lord, if You completely heal me, I will dedicate my whole life to serve You.”  
 But God didn’t heal me right away. I wondered if He even really heard my prayer.
 
-Then in 2023, I met a missionary, Rev. Khoo, from YWAM. While praying for me, he saw a vision: I hold a guitar, sing worship songs, and share the gospel with people from different countries—Japan, America, and across East Asia.  
+Then in 2023, I met a missionary. While praying for me, he saw a vision: I hold a guitar, sing worship songs, and share the gospel with people from different countries—Japan, America, and across East Asia.  
 He encouraged me to keep praying and prepare myself to be used by God.
 
 And now, I see this vision coming true. After coming to ICU last year, when I first joined the English Bible Study, a sister in Christ said to me, “You are a missionary here!” I was shocked at first. But slowly, I realized—it was true. God opened doors for me to serve: sharing the gospel to friends, serving at Worship Night, leading Bible studies. I am so grateful that I am able to live in God’s love and to share and reflect God’s love to people around me.

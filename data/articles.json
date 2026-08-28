@@ -9,7 +9,8 @@
     "file": "content/articles/worship-is-the-very-purpose-of-life.md",
     "excerpt": "初めに、一つクイズがあります！台湾語で「拝上帝的人」という言葉がありますが、英語や日本語で何に当たると思いますか？ヒントは黒字。十秒考えてみてください。",
     "words": 2011,
-    "cover": "content/covers/faith-testimony.jpg"
+    "cover": "content/covers/faith-testimony.jpg",
+    "noindex": true
   },
   {
     "id": "the-son-of-man-came-to-seek-and-to-save-the-lost",
@@ -21,7 +22,8 @@
     "file": "content/articles/the-son-of-man-came-to-seek-and-to-save-the-lost.md",
     "excerpt": "I want to ask you a question: Have you ever lost something before?",
     "words": 1746,
-    "cover": "content/covers/faith-testimony.jpg"
+    "cover": "content/covers/faith-testimony-2.jpg",
+    "noindex": true
   },
   {
     "id": "saikou-no-michi",
@@ -33,7 +35,8 @@
     "file": "content/articles/saikou-no-michi.md",
     "excerpt": "この短い文章は、私の人生に与えられた、最も大切な宝を振り返り、神の御前で感謝をささげ、その恵みをあなたと分かち合うために記したものです。",
     "words": 16,
-    "cover": "content/covers/faith-testimony.jpg"
+    "cover": "content/covers/faith-testimony-3.jpg",
+    "noindex": true
   },
   {
     "id": "five-wise-virgins",
@@ -45,7 +48,7 @@
     "file": "content/articles/five-wise-virgins.md",
     "excerpt": "今年のWorship NightのServantsは五人ですよね。皆さんと一緒に奉仕するのは大変嬉しいです。Servantsの人数（にんずう）は、マタイの福音書25章に登場する「油を用意した五人の賢い娘」と同じ人数です。このたとえ話を通して、私たちが「油を用意した賢い娘」となるよう励ましたいと思います。このたとえ話において、花婿（はなむこ）はイエス・キリストを象徴し、十人の娘はクリスチャンを象徴しています。そして、花…",
     "words": 44,
-    "cover": "content/covers/faith-testimony.jpg"
+    "cover": "content/covers/faith-testimony-4.jpg"
   },
   {
     "id": "essence-of-christianity-eating-together",
@@ -57,7 +60,7 @@
     "file": "content/papers/essence-of-christianity-eating-together.pdf",
     "excerpt": "Full paper available as PDF.",
     "size": 0.3,
-    "cover": "content/covers/faith-testimony.jpg"
+    "cover": "content/covers/faith-testimony-5.jpg"
   },
   {
     "id": "hatori-matao-and-icu-fundraising",
@@ -81,7 +84,7 @@
     "file": "content/articles/meiji-hymns-and-nationalism.md",
     "excerpt": "明治維新以降、廃藩置県の実行、統一中央集権国家の形成、外国との交流や摩擦といった様々な要因が重なり合い、日本のナショナリズムは発展を遂げ、最終的に昭和時代の軍国主義へと至った。一方、明治六年にはキリスト教が解禁され、日本は再布教の時代に入り、国内のクリスチャン人口も次第に増加していった。",
     "words": 177,
-    "cover": "content/covers/faith-history.jpg"
+    "cover": "content/covers/faith-history-2.jpg"
   },
   {
     "id": "his-uncle-gambling-and-murder-phonological-adaptation-of-southern-min-",
@@ -128,7 +131,7 @@
     "file": "content/papers/ml-southern-min-checked-tones.pdf",
     "excerpt": "Full paper available as PDF.",
     "size": 1.1,
-    "cover": "content/covers/ling-phonetics.jpg"
+    "cover": "content/covers/ling-phonetics-2.jpg"
   },
   {
     "id": "lng223-finalreport-jeremylim",
@@ -176,7 +179,7 @@
     "file": "content/articles/dna.md",
     "excerpt": "DNAとは、生物の遺伝情報を保持し、生命活動を支える分子である。DNAは二本のヌクレオチド鎖から螺旋状に巻き付いた構造を持ち、安定性を有する。二重螺旋の内側がA(アデニン) 、T(チミン)、C(シトシン)及び G(グアニン)という四種類の塩基が遺伝情報をコードしていて、AとT、CとGの相補的結合により、多様かつ多量の情報を保持する。さらに、セントラルドグマにより、DNAの情報は直接利用されるのではなく、RNAを経由し…",
     "words": 167,
-    "cover": "content/covers/topic-science.jpg"
+    "cover": "content/covers/topic-science-2.jpg"
   },
   {
     "id": "about-the-double-reduction-policy",
@@ -200,7 +203,7 @@
     "file": "content/articles/rural-education-support-program-in-modern-china.md",
     "excerpt": "Education is critical in alleviating poverty and promoting social development, particularly in rural areas. For instance, in 1905, Samuel Pollard, a British Methodist missionary, arrived in Shimenkan, a remote…",
     "words": 2428,
-    "cover": "content/covers/topic-education.jpg"
+    "cover": "content/covers/topic-education-2.jpg"
   },
   {
     "id": "problems-and-solutions-of-cramming-education-in-china",
@@ -212,7 +215,7 @@
     "file": "content/articles/problems-and-solutions-of-cramming-education-in-china.md",
     "excerpt": "According to a famous traditional Chinese saying, “All other pursuits are inferior; only studying is truly noble.” This thought originated in imperial China, where the only legitimate way to secure an official…",
     "words": 2046,
-    "cover": "content/covers/topic-education.jpg"
+    "cover": "content/covers/topic-education-3.jpg"
   },
   {
     "id": "chinese-people-in-japan-as-a-marginalized-ethnic-group",
@@ -236,6 +239,8 @@
     "file": "content/articles/what-affects-icu-students-openness-to-different-worldviews.md",
     "excerpt": "This Research paper used an interview survey approach combined with descriptive statistics to investigate how language diversity and cognitive flexibility among ICU students affect their openness to different w…",
     "words": 3282,
-    "cover": "content/covers/topic-eastasia.jpg"
+    "cover": "content/covers/topic-eastasia-2.jpg",
+    "noindex": true,
+    "unlisted": true
   }
 ]
