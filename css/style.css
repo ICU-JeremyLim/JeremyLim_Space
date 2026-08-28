@@ -909,12 +909,33 @@ ul { list-style: none; }
 }
 .entry__thumb {
   flex-shrink: 0;
-  width: 64px; height: 82px;
-  border-radius: 4px;
+  width: 104px; height: 76px;
+  border-radius: 10px;
   overflow: hidden;
   background: var(--border);
 }
-.entry__thumb img { width: 100%; height: 100%; object-fit: cover; }
+.entry__thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+.entry:hover .entry__thumb img { transform: scale(1.06); }
+
+@media (max-width: 560px) {
+  .entry__thumb { width: 68px; height: 56px; }
+}
+
+/* Reader hero image */
+.reader__hero {
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  aspect-ratio: 3 / 1;
+}
+.reader__hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (max-width: 600px) { .reader__hero { aspect-ratio: 2 / 1; } }
 .entry__body { flex: 1; min-width: 0; }
 .entry__top {
   display: flex;

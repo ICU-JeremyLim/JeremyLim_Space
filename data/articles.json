@@ -8,7 +8,8 @@
     "type": "article",
     "file": "content/articles/worship-is-the-very-purpose-of-life.md",
     "excerpt": "初めに、一つクイズがあります！台湾語で「拝上帝的人」という言葉がありますが、英語や日本語で何に当たると思いますか？ヒントは黒字。十秒考えてみてください。",
-    "words": 2011
+    "words": 2011,
+    "cover": "content/covers/faith-testimony.jpg"
   },
   {
     "id": "the-son-of-man-came-to-seek-and-to-save-the-lost",
@@ -19,7 +20,8 @@
     "type": "article",
     "file": "content/articles/the-son-of-man-came-to-seek-and-to-save-the-lost.md",
     "excerpt": "I want to ask you a question: Have you ever lost something before?",
-    "words": 1746
+    "words": 1746,
+    "cover": "content/covers/faith-testimony.jpg"
   },
   {
     "id": "saikou-no-michi",
@@ -30,7 +32,8 @@
     "type": "article",
     "file": "content/articles/saikou-no-michi.md",
     "excerpt": "この短い文章は、私の人生に与えられた、最も大切な宝を振り返り、神の御前で感謝をささげ、その恵みをあなたと分かち合うために記したものです。",
-    "words": 16
+    "words": 16,
+    "cover": "content/covers/faith-testimony.jpg"
   },
   {
     "id": "five-wise-virgins",
@@ -41,7 +44,8 @@
     "type": "article",
     "file": "content/articles/five-wise-virgins.md",
     "excerpt": "今年のWorship NightのServantsは五人ですよね。皆さんと一緒に奉仕するのは大変嬉しいです。Servantsの人数（にんずう）は、マタイの福音書25章に登場する「油を用意した五人の賢い娘」と同じ人数です。このたとえ話を通して、私たちが「油を用意した賢い娘」となるよう励ましたいと思います。このたとえ話において、花婿（はなむこ）はイエス・キリストを象徴し、十人の娘はクリスチャンを象徴しています。そして、花…",
-    "words": 44
+    "words": 44,
+    "cover": "content/covers/faith-testimony.jpg"
   },
   {
     "id": "essence-of-christianity-eating-together",
@@ -52,7 +56,8 @@
     "type": "pdf",
     "file": "content/papers/essence-of-christianity-eating-together.pdf",
     "excerpt": "Full paper available as PDF.",
-    "size": 0.3
+    "size": 0.3,
+    "cover": "content/covers/faith-testimony.jpg"
   },
   {
     "id": "hatori-matao-and-icu-fundraising",
@@ -63,7 +68,8 @@
     "type": "pdf",
     "file": "content/papers/hatori-matao-and-icu-fundraising.pdf",
     "excerpt": "Full paper available as PDF.",
-    "size": 2.5
+    "size": 2.5,
+    "cover": "content/covers/faith-history.jpg"
   },
   {
     "id": "meiji-hymns-and-nationalism",
@@ -74,7 +80,8 @@
     "type": "article",
     "file": "content/articles/meiji-hymns-and-nationalism.md",
     "excerpt": "明治維新以降、廃藩置県の実行、統一中央集権国家の形成、外国との交流や摩擦といった様々な要因が重なり合い、日本のナショナリズムは発展を遂げ、最終的に昭和時代の軍国主義へと至った。一方、明治六年にはキリスト教が解禁され、日本は再布教の時代に入り、国内のクリスチャン人口も次第に増加していった。",
-    "words": 177
+    "words": 177,
+    "cover": "content/covers/faith-history.jpg"
   },
   {
     "id": "his-uncle-gambling-and-murder-phonological-adaptation-of-southern-min-",
@@ -85,7 +92,8 @@
     "type": "pdf",
     "file": "content/papers/his-uncle-gambling-and-murder-phonological-adaptation-of-southern-min-.pdf",
     "excerpt": "Full paper available as PDF.",
-    "size": 0.4
+    "size": 0.4,
+    "cover": "content/covers/ling-phonology.jpg"
   },
   {
     "id": "acoustic-cues-and-cross-linguistic-perception-of-checked-tones-in",
@@ -96,7 +104,8 @@
     "type": "pdf",
     "file": "content/papers/acoustic-cues-and-cross-linguistic-perception-of-checked-tones-in.pdf",
     "excerpt": "Full paper available as PDF.",
-    "size": 0.6
+    "size": 0.6,
+    "cover": "content/covers/ling-phonetics.jpg"
   },
   {
     "id": "poster-hisphoncog2026",
@@ -118,7 +127,8 @@
     "type": "pdf",
     "file": "content/papers/ml-southern-min-checked-tones.pdf",
     "excerpt": "Full paper available as PDF.",
-    "size": 1.1
+    "size": 1.1,
+    "cover": "content/covers/ling-phonetics.jpg"
   },
   {
     "id": "lng223-finalreport-jeremylim",
@@ -129,7 +139,8 @@
     "type": "pdf",
     "file": "content/papers/lng223-finalreport-jeremylim.pdf",
     "excerpt": "Full paper available as PDF.",
-    "size": 0.5
+    "size": 0.5,
+    "cover": "content/covers/ling-syntax.jpg"
   },
   {
     "id": "ethical-dilemma-of-language-policy",
@@ -140,7 +151,8 @@
     "type": "article",
     "file": "content/articles/ethical-dilemma-of-language-policy.md",
     "excerpt": "Ethical dilemmas refer to situations where a difficult choice must be made between several options, and there is no completely right or wrong answer. They are not only a moral conflict that happens in the imagi…",
-    "words": 2365
+    "words": 2365,
+    "cover": "content/covers/ling-social.jpg"
   },
   {
     "id": "rethinking-science-and-research",
@@ -151,7 +163,8 @@
     "type": "article",
     "file": "content/articles/rethinking-science-and-research.md",
     "excerpt": "小林先生の『理系研究者がハッピーな研究生活を送るには』を拝読し、自分が持っている科学と研究についての見方がリフレッシュされたと深く感じた。この本は幅広い話題を扱っているため、私が考えたことや感じたこともさまざまであり、それらを抜粋して「科学リテラシーの不十分」「私と科学」「研究者になりたい」の三つの部分に分けて述べたいと思う。",
-    "words": 38
+    "words": 38,
+    "cover": "content/covers/topic-science.jpg"
   },
   {
     "id": "dna",
@@ -162,7 +175,8 @@
     "type": "article",
     "file": "content/articles/dna.md",
     "excerpt": "DNAとは、生物の遺伝情報を保持し、生命活動を支える分子である。DNAは二本のヌクレオチド鎖から螺旋状に巻き付いた構造を持ち、安定性を有する。二重螺旋の内側がA(アデニン) 、T(チミン)、C(シトシン)及び G(グアニン)という四種類の塩基が遺伝情報をコードしていて、AとT、CとGの相補的結合により、多様かつ多量の情報を保持する。さらに、セントラルドグマにより、DNAの情報は直接利用されるのではなく、RNAを経由し…",
-    "words": 167
+    "words": 167,
+    "cover": "content/covers/topic-science.jpg"
   },
   {
     "id": "about-the-double-reduction-policy",
@@ -173,7 +187,8 @@
     "type": "article",
     "file": "content/articles/about-the-double-reduction-policy.md",
     "excerpt": "Even though the Double Reduction Policy is not a literal educational project or program, it is one of the most impactful education policies on compulsory education in mainland China in the 21st century, and it…",
-    "words": 2282
+    "words": 2282,
+    "cover": "content/covers/topic-education.jpg"
   },
   {
     "id": "rural-education-support-program-in-modern-china",
@@ -184,7 +199,8 @@
     "type": "article",
     "file": "content/articles/rural-education-support-program-in-modern-china.md",
     "excerpt": "Education is critical in alleviating poverty and promoting social development, particularly in rural areas. For instance, in 1905, Samuel Pollard, a British Methodist missionary, arrived in Shimenkan, a remote…",
-    "words": 2428
+    "words": 2428,
+    "cover": "content/covers/topic-education.jpg"
   },
   {
     "id": "problems-and-solutions-of-cramming-education-in-china",
@@ -195,7 +211,8 @@
     "type": "article",
     "file": "content/articles/problems-and-solutions-of-cramming-education-in-china.md",
     "excerpt": "According to a famous traditional Chinese saying, “All other pursuits are inferior; only studying is truly noble.” This thought originated in imperial China, where the only legitimate way to secure an official…",
-    "words": 2046
+    "words": 2046,
+    "cover": "content/covers/topic-education.jpg"
   },
   {
     "id": "chinese-people-in-japan-as-a-marginalized-ethnic-group",
@@ -206,7 +223,8 @@
     "type": "article",
     "file": "content/articles/chinese-people-in-japan-as-a-marginalized-ethnic-group.md",
     "excerpt": "According to Yamashiro, there are two kinds of people from the point of view of Japanese society: Japanese and non-Japanese (175). Non-Japanese are minorities, marginalized and regarded as inferior groups in Ja…",
-    "words": 1617
+    "words": 1617,
+    "cover": "content/covers/topic-eastasia.jpg"
   },
   {
     "id": "what-affects-icu-students-openness-to-different-worldviews",
@@ -217,6 +235,7 @@
     "type": "article",
     "file": "content/articles/what-affects-icu-students-openness-to-different-worldviews.md",
     "excerpt": "This Research paper used an interview survey approach combined with descriptive statistics to investigate how language diversity and cognitive flexibility among ICU students affect their openness to different w…",
-    "words": 3282
+    "words": 3282,
+    "cover": "content/covers/topic-eastasia.jpg"
   }
 ]

@@ -391,8 +391,13 @@
     } else { // poster
       href = it.file; target = ' target="_blank" rel="noopener"';
       badge = '<span class="entry__type entry__type--poster">Poster</span>';
-      if (it.thumb) thumb = '<div class="entry__thumb"><img src="' + esc(it.thumb) +
-        '" alt="' + esc(it.title) + '" loading="lazy"></div>';
+    }
+
+    // The poster shows itself; everything else shows its themed cover.
+    var img = it.thumb || it.cover;
+    if (img) {
+      thumb = '<div class="entry__thumb"><img src="' + esc(img) +
+        '" alt="" loading="lazy" onerror="this.parentNode.style.display=\'none\'"></div>';
     }
 
     return '<a class="entry reveal" href="' + esc(href) + '"' + target + '>' +
@@ -451,6 +456,13 @@
 
         document.title = it.title + ' — Jeremy Lim';
         titleEl.textContent = it.title;
+
+        var heroEl = document.getElementById('reader-hero');
+        if (heroEl && it.cover) {
+          heroEl.innerHTML = '<img src="' + esc(it.cover) + '" alt="" ' +
+            'onerror="this.parentNode.style.display=\'none\'">';
+          heroEl.style.display = '';
+        }
         metaEl.innerHTML =
           '<a class="reader__cat" href="articles.html#' + slug(it.category) + '">' +
             esc(it.category) + '</a>' +
