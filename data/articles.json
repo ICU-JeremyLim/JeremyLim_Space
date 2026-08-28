@@ -1,0 +1,222 @@
+[
+  {
+    "id": "worship-is-the-very-purpose-of-life",
+    "title": "Worship is the Very Purpose of Life",
+    "date": "2025-01-01",
+    "category": "Christian Faith",
+    "subcategory": "Testimony & Sharing",
+    "type": "article",
+    "file": "content/articles/worship-is-the-very-purpose-of-life.md",
+    "excerpt": "初めに、一つクイズがあります！台湾語で「拝上帝的人」という言葉がありますが、英語や日本語で何に当たると思いますか？ヒントは黒字。十秒考えてみてください。",
+    "words": 2011
+  },
+  {
+    "id": "the-son-of-man-came-to-seek-and-to-save-the-lost",
+    "title": "The Son of Man Came to Seek and to Save the Lost",
+    "date": "2025-06-01",
+    "category": "Christian Faith",
+    "subcategory": "Testimony & Sharing",
+    "type": "article",
+    "file": "content/articles/the-son-of-man-came-to-seek-and-to-save-the-lost.md",
+    "excerpt": "I want to ask you a question: Have you ever lost something before?",
+    "words": 1746
+  },
+  {
+    "id": "saikou-no-michi",
+    "title": "最高の道",
+    "date": "2026-01-07",
+    "category": "Christian Faith",
+    "subcategory": "Testimony & Sharing",
+    "type": "article",
+    "file": "content/articles/saikou-no-michi.md",
+    "excerpt": "この短い文章は、私の人生に与えられた、最も大切な宝を振り返り、神の御前で感謝をささげ、その恵みをあなたと分かち合うために記したものです。",
+    "words": 16
+  },
+  {
+    "id": "five-wise-virgins",
+    "title": "油を用意した五人の賢い娘になろう",
+    "date": "2025-01-01",
+    "category": "Christian Faith",
+    "subcategory": "Testimony & Sharing",
+    "type": "article",
+    "file": "content/articles/five-wise-virgins.md",
+    "excerpt": "今年のWorship NightのServantsは五人ですよね。皆さんと一緒に奉仕するのは大変嬉しいです。Servantsの人数（にんずう）は、マタイの福音書25章に登場する「油を用意した五人の賢い娘」と同じ人数です。このたとえ話を通して、私たちが「油を用意した賢い娘」となるよう励ましたいと思います。このたとえ話において、花婿（はなむこ）はイエス・キリストを象徴し、十人の娘はクリスチャンを象徴しています。そして、花…",
+    "words": 44
+  },
+  {
+    "id": "essence-of-christianity-eating-together",
+    "title": "基督教的本质是一起吃饭？",
+    "date": "2025-01-01",
+    "category": "Christian Faith",
+    "subcategory": "Testimony & Sharing",
+    "type": "pdf",
+    "file": "content/papers/essence-of-christianity-eating-together.pdf",
+    "excerpt": "Full paper available as PDF.",
+    "size": 0.3
+  },
+  {
+    "id": "hatori-matao-and-icu-fundraising",
+    "title": "羽鳥又男とICU建設募金の背後",
+    "date": "2025-01-01",
+    "category": "Christian Faith",
+    "subcategory": "History Research about Christianity",
+    "type": "pdf",
+    "file": "content/papers/hatori-matao-and-icu-fundraising.pdf",
+    "excerpt": "Full paper available as PDF.",
+    "size": 2.5
+  },
+  {
+    "id": "meiji-hymns-and-nationalism",
+    "title": "明治時代日本のオリジナル讃美歌とナショナリズム",
+    "date": "2025-01-01",
+    "category": "Christian Faith",
+    "subcategory": "History Research about Christianity",
+    "type": "article",
+    "file": "content/articles/meiji-hymns-and-nationalism.md",
+    "excerpt": "明治維新以降、廃藩置県の実行、統一中央集権国家の形成、外国との交流や摩擦といった様々な要因が重なり合い、日本のナショナリズムは発展を遂げ、最終的に昭和時代の軍国主義へと至った。一方、明治六年にはキリスト教が解禁され、日本は再布教の時代に入り、国内のクリスチャン人口も次第に増加していった。",
+    "words": 177
+  },
+  {
+    "id": "his-uncle-gambling-and-murder-phonological-adaptation-of-southern-min-",
+    "title": "His Uncle, Gambling, and Murder — Phonological Adaptation of Southern Min Loanwords in Cebuano",
+    "date": "2025-01-01",
+    "category": "Linguistics",
+    "subcategory": "Phonology",
+    "type": "pdf",
+    "file": "content/papers/his-uncle-gambling-and-murder-phonological-adaptation-of-southern-min-.pdf",
+    "excerpt": "Full paper available as PDF.",
+    "size": 0.4
+  },
+  {
+    "id": "acoustic-cues-and-cross-linguistic-perception-of-checked-tones-in",
+    "title": "Acoustic Cues and Cross-Linguistic Perception of Checked Tones",
+    "date": "2026-01-01",
+    "category": "Linguistics",
+    "subcategory": "Phonetics",
+    "type": "pdf",
+    "file": "content/papers/acoustic-cues-and-cross-linguistic-perception-of-checked-tones-in.pdf",
+    "excerpt": "Full paper available as PDF.",
+    "size": 0.6
+  },
+  {
+    "id": "poster-hisphoncog2026",
+    "title": "HISPhonCog 2026 — Conference Poster",
+    "date": "2026-01-01",
+    "category": "Linguistics",
+    "subcategory": "Phonetics",
+    "type": "poster",
+    "file": "content/images/poster-hisphoncog2026.jpg",
+    "excerpt": "Conference poster presented at HISPhonCog 2026.",
+    "thumb": "content/images/poster-hisphoncog2026-thumb.jpg"
+  },
+  {
+    "id": "ml-southern-min-checked-tones",
+    "title": "機械学習により閩南語入声の発声と認識の再考",
+    "date": "2025-01-01",
+    "category": "Linguistics",
+    "subcategory": "Phonetics",
+    "type": "pdf",
+    "file": "content/papers/ml-southern-min-checked-tones.pdf",
+    "excerpt": "Full paper available as PDF.",
+    "size": 1.1
+  },
+  {
+    "id": "lng223-finalreport-jeremylim",
+    "title": "LNG223 Final Report — Syntax",
+    "date": "2025-01-01",
+    "category": "Linguistics",
+    "subcategory": "Syntax",
+    "type": "pdf",
+    "file": "content/papers/lng223-finalreport-jeremylim.pdf",
+    "excerpt": "Full paper available as PDF.",
+    "size": 0.5
+  },
+  {
+    "id": "ethical-dilemma-of-language-policy",
+    "title": "Ethical Dilemma of Language Policy",
+    "date": "2025-11-01",
+    "category": "Linguistics",
+    "subcategory": "Social Linguistics",
+    "type": "article",
+    "file": "content/articles/ethical-dilemma-of-language-policy.md",
+    "excerpt": "Ethical dilemmas refer to situations where a difficult choice must be made between several options, and there is no completely right or wrong answer. They are not only a moral conflict that happens in the imagi…",
+    "words": 2365
+  },
+  {
+    "id": "rethinking-science-and-research",
+    "title": "科学と研究の再考",
+    "date": "2025-01-01",
+    "category": "Random Topics",
+    "subcategory": "Science",
+    "type": "article",
+    "file": "content/articles/rethinking-science-and-research.md",
+    "excerpt": "小林先生の『理系研究者がハッピーな研究生活を送るには』を拝読し、自分が持っている科学と研究についての見方がリフレッシュされたと深く感じた。この本は幅広い話題を扱っているため、私が考えたことや感じたこともさまざまであり、それらを抜粋して「科学リテラシーの不十分」「私と科学」「研究者になりたい」の三つの部分に分けて述べたいと思う。",
+    "words": 38
+  },
+  {
+    "id": "dna",
+    "title": "生命のコード —DNAと聖書の構造的類似性—",
+    "date": "2025-01-01",
+    "category": "Random Topics",
+    "subcategory": "Science",
+    "type": "article",
+    "file": "content/articles/dna.md",
+    "excerpt": "DNAとは、生物の遺伝情報を保持し、生命活動を支える分子である。DNAは二本のヌクレオチド鎖から螺旋状に巻き付いた構造を持ち、安定性を有する。二重螺旋の内側がA(アデニン) 、T(チミン)、C(シトシン)及び G(グアニン)という四種類の塩基が遺伝情報をコードしていて、AとT、CとGの相補的結合により、多様かつ多量の情報を保持する。さらに、セントラルドグマにより、DNAの情報は直接利用されるのではなく、RNAを経由し…",
+    "words": 167
+  },
+  {
+    "id": "about-the-double-reduction-policy",
+    "title": "The Double Reduction Policy: Transforming Education in 21st Century China",
+    "date": "2025-01-30",
+    "category": "Random Topics",
+    "subcategory": "Education",
+    "type": "article",
+    "file": "content/articles/about-the-double-reduction-policy.md",
+    "excerpt": "Even though the Double Reduction Policy is not a literal educational project or program, it is one of the most impactful education policies on compulsory education in mainland China in the 21st century, and it…",
+    "words": 2282
+  },
+  {
+    "id": "rural-education-support-program-in-modern-china",
+    "title": "Rural Education Support Program in Modern China",
+    "date": "2025-03-05",
+    "category": "Random Topics",
+    "subcategory": "Education",
+    "type": "article",
+    "file": "content/articles/rural-education-support-program-in-modern-china.md",
+    "excerpt": "Education is critical in alleviating poverty and promoting social development, particularly in rural areas. For instance, in 1905, Samuel Pollard, a British Methodist missionary, arrived in Shimenkan, a remote…",
+    "words": 2428
+  },
+  {
+    "id": "problems-and-solutions-of-cramming-education-in-china",
+    "title": "Problems and Solutions of Cramming Education in China",
+    "date": "2025-06-13",
+    "category": "Random Topics",
+    "subcategory": "Education",
+    "type": "article",
+    "file": "content/articles/problems-and-solutions-of-cramming-education-in-china.md",
+    "excerpt": "According to a famous traditional Chinese saying, “All other pursuits are inferior; only studying is truly noble.” This thought originated in imperial China, where the only legitimate way to secure an official…",
+    "words": 2046
+  },
+  {
+    "id": "chinese-people-in-japan-as-a-marginalized-ethnic-group",
+    "title": "Chinese People in Japan as a Marginalized Ethnic Group: Yesterday, Today, and Tomorrow",
+    "date": "2025-10-03",
+    "category": "Random Topics",
+    "subcategory": "East Asia",
+    "type": "article",
+    "file": "content/articles/chinese-people-in-japan-as-a-marginalized-ethnic-group.md",
+    "excerpt": "According to Yamashiro, there are two kinds of people from the point of view of Japanese society: Japanese and non-Japanese (175). Non-Japanese are minorities, marginalized and regarded as inferior groups in Ja…",
+    "words": 1617
+  },
+  {
+    "id": "what-affects-icu-students-openness-to-different-worldviews",
+    "title": "What Affects ICU Students’ Openness to Different Worldviews",
+    "date": "2025-01-01",
+    "category": "Random Topics",
+    "subcategory": "East Asia",
+    "type": "article",
+    "file": "content/articles/what-affects-icu-students-openness-to-different-worldviews.md",
+    "excerpt": "This Research paper used an interview survey approach combined with descriptive statistics to investigate how language diversity and cognitive flexibility among ICU students affect their openness to different w…",
+    "words": 3282
+  }
+]

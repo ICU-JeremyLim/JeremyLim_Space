@@ -2,6 +2,12 @@
   "profile": {
     "name": "Jeremy Lim",
     "tagline": "Christian · Linguist · Photographer · Writer",
+    "taglineLinks": [
+      { "label": "Christian",    "url": "articles.html#christian-faith" },
+      { "label": "Linguist",     "url": "articles.html#linguistics" },
+      { "label": "Photographer", "url": "gallery.html" },
+      { "label": "Writer",       "url": "articles.html#random-topics" }
+    ],
     "bio": "I am Jeremy Lim, an undergraduate at International Christian University in Tokyo, studying Linguistics and Information Science. My academic interests center on computational linguistics, speech science, and low-resource language research, especially Southern Min (Hokkien).\n\nBeyond research, I am involved in photography, writing, and interdisciplinary collaboration. I am interested in how faith, technology, and human dignity interact in the age of AI.",
     "photo": "images/profile/profile.jpg",
     "location": "Mitaka, Tokyo",
@@ -31,17 +37,7 @@
     "links":    ""
   },
 
-  "articles": [
-    {
-      "id": "research-hisphoncog2026",
-      "title": "Research Demo: Phonological Cognition Study (HISPhonCog 2026)",
-      "date": "2026-01-01",
-      "cover": "",
-      "tags": ["Research", "Linguistics", "Hokkien"],
-      "excerpt": "A demo and supplementary materials for my paper submitted to HIS PhonCog 2026. The research explores phonological cognition in Southern Min (Hokkien) using computational methods.",
-      "content": "A demo and supplementary materials for my paper submitted to HIS PhonCog 2026 (Paper #141).\n\nThe research explores phonological cognition in Southern Min (Hokkien) using computational methods.\n\nFull demo and code: https://github.com/ICU-JeremyLim/HISPhonCog2026Paper141"
-    }
-  ],
+  "_note": "Articles live in data/articles.json (generated from the Category structure). Photos below are shown on gallery.html.",
 
   "photos": [],
 

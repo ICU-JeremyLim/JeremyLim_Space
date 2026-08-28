@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Articles — Jeremy Lim</title>
-  <meta name="description" content="Writing on Christian faith, linguistics, education, and East Asia by Jeremy Lim.">
+  <title>Article — Jeremy Lim</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
@@ -38,30 +37,17 @@
     </div>
   </nav>
 
-  <header class="page-header">
-    <div class="container">
-      <div class="section-label">Writing &amp; Research</div>
-      <h1>Articles</h1>
-      <p>Essays, testimonies, and academic work across faith, language, and society.</p>
-    </div>
-  </header>
+  <!-- Reading progress -->
+  <div class="read-progress"><div class="read-progress__bar" id="read-bar"></div></div>
 
-  <!-- Category jump bar -->
-  <div class="cat-bar" id="cat-bar">
-    <div class="container">
-      <div class="cat-bar__inner">
-        <a href="#christian-faith" class="cat-chip">Christian Faith</a>
-        <a href="#linguistics"     class="cat-chip">Linguistics</a>
-        <a href="#random-topics"   class="cat-chip">Random Topics</a>
-      </div>
+  <article class="reader">
+    <div class="container container--narrow">
+      <a href="articles.html" class="reader__back">&larr; All articles</a>
+      <div class="reader__meta" id="reader-meta"></div>
+      <h1 class="reader__title" id="reader-title">Loading…</h1>
+      <div class="prose" id="reader-body"></div>
     </div>
-  </div>
-
-  <section class="articles">
-    <div class="container">
-      <div id="articles-index"></div>
-    </div>
-  </section>
+  </article>
 
   <footer class="footer">
     <div class="container">
@@ -69,8 +55,8 @@
         <span>&copy; <span id="yr"></span> Jeremy Lim</span>
         <div style="display:flex;gap:1.5rem;">
           <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
           <a href="gallery.html">Photos</a>
-          <a href="links.html">Links</a>
         </div>
       </div>
     </div>
