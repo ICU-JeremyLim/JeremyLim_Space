@@ -174,6 +174,11 @@ Page Break
 
 Appendix B - Research Survey Questions
 
-![](content/images/what-affects-icu-students-openness-to-different-worldviews-9.jpg)
+*The survey instrument was submitted on the course’s "QRFP Survey Questions for
+Teacher Approval" form. That scan is withheld from this public version: it is an
+internal course document rather than part of the study, and it carries a
+participant-background grid (pseudonym, age, gender, year, major, religious
+background, languages). The survey questions themselves are described in the
+Participants and Methods sections above.*
 
 **
