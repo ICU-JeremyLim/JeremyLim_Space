@@ -376,8 +376,27 @@
           '</section>';
         }).join('');
 
+        fillCatColumns(byCat);
         initCatBar();
       });
+  }
+
+  /* Fill the three category columns with their subcategories and counts */
+  function fillCatColumns(byCat) {
+    document.querySelectorAll('.cat-col').forEach(function (col) {
+      var wanted = col.getAttribute('data-cat');
+      var cat = Object.keys(byCat).filter(function (c) { return slug(c) === wanted; })[0];
+      if (!cat) { col.style.display = 'none'; return; }
+
+      var subs = Object.keys(byCat[cat]);
+      var total = subs.reduce(function (n, s) { return n + byCat[cat][s].length; }, 0);
+
+      var subsEl = col.querySelector('.cat-col__subs');
+      if (subsEl) subsEl.textContent = subs.join(' · ');
+
+      var cntEl = col.querySelector('.cat-col__count');
+      if (cntEl) cntEl.textContent = total + (total === 1 ? ' piece' : ' pieces');
+    });
   }
 
   function entryCard(it) {
@@ -414,20 +433,20 @@
     '</a>';
   }
 
-  /* Highlight the category chip matching the section in view */
+  /* Highlight the category column matching the section in view */
   function initCatBar() {
-    var chips = document.querySelectorAll('.cat-chip');
+    var cols = document.querySelectorAll('.cat-col');
     var sections = document.querySelectorAll('.cat');
-    if (!chips.length || !sections.length) return;
+    if (!cols.length || !sections.length) return;
 
     function sync() {
       var best = null, bestTop = Infinity;
       sections.forEach(function (s) {
-        var top = Math.abs(s.getBoundingClientRect().top - 120);
+        var top = Math.abs(s.getBoundingClientRect().top - 140);
         if (top < bestTop) { bestTop = top; best = s.id; }
       });
-      chips.forEach(function (c) {
-        c.classList.toggle('cat-chip--active', c.getAttribute('href') === '#' + best);
+      cols.forEach(function (c) {
+        c.classList.toggle('cat-col--active', c.getAttribute('href') === '#' + best);
       });
     }
     window.addEventListener('scroll', sync, { passive: true });
@@ -466,6 +485,19 @@
           m.name = 'robots';
           m.content = 'noindex, noarchive, nosnippet';
           document.head.appendChild(m);
+        }
+
+        // Papers rendered from a PDF keep a link to the original file.
+        var pdfEl = document.getElementById('reader-pdf');
+        if (pdfEl && it.pdf) {
+          pdfEl.innerHTML = '<a class="reader__pdf-link" href="' + esc(it.pdf) +
+            '" target="_blank" rel="noopener">' +
+            '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" ' +
+            'viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">' +
+            '<path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>' +
+            '<polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>' +
+            'Original PDF</a>';
+          pdfEl.style.display = '';
         }
 
         var heroEl = document.getElementById('reader-hero');

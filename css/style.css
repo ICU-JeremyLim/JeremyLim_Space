@@ -293,13 +293,20 @@ ul { list-style: none; }
   transform: translateY(-1px);
 }
 
+/* Phone: same left-aligned composition as desktop, just stacked.
+   Previously this centred everything and turned the portrait into a circle,
+   which made the phone view read as a different site. */
 @media (max-width: 700px) {
-  .profile__grid { grid-template-columns: 1fr; gap: 2rem; }
+  .profile { padding: calc(var(--nav-h) + 2rem) 0 3rem; }
+  .profile__grid { grid-template-columns: 1fr; gap: 1.75rem; }
   .profile__photo-wrap { position: static; }
-  .profile__photo { width: 140px; aspect-ratio: 1; border-radius: 50%; margin: 0 auto; }
-  .profile { text-align: center; }
-  .profile__bio { margin: 0 auto 2rem; }
-  .profile__meta, .profile__socials { justify-content: center; }
+  .profile__photo {
+    width: 150px;
+    aspect-ratio: 3/4;
+    border-radius: var(--radius);
+    margin: 0;
+  }
+  .profile__bio { max-width: none; }
 }
 
 /* --- CV Timeline --- */
@@ -427,7 +434,7 @@ ul { list-style: none; }
 }
 .module-card__overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(transparent 30%, rgba(0,0,0,0.75) 100%);
+  background: linear-gradient(rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.25) 40%, rgba(13,53,46,0.88) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -435,8 +442,9 @@ ul { list-style: none; }
   transition: background 0.3s;
 }
 .module-card:hover .module-card__overlay {
-  background: linear-gradient(transparent 20%, rgba(0,0,0,0.85) 100%);
+  background: linear-gradient(rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.34) 40%, rgba(13,53,46,0.94) 100%);
 }
+.module-card__bg { background-color: var(--green-700); }
 .module-card__title {
   font-family: var(--font-display);
   font-size: 1.6rem;
@@ -802,42 +810,64 @@ ul { list-style: none; }
 .tagline-sep { color: var(--border); margin: 0 0.5rem; }
 
 /* =========================================
-   Category jump bar (articles page)
+   Category columns (articles page)
+   Same surface, border and radius as .entry so the page reads as one family.
    ========================================= */
-.cat-bar {
-  position: sticky;
-  top: calc(var(--nav-h) + 0.5rem);
-  z-index: 60;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+.cat-cols-wrap {
+  padding: 2rem 0 0;
 }
-.cat-bar__inner {
+.cat-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.cat-col {
   display: flex;
-  gap: 0.5rem;
-  padding: 0.75rem 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.cat-bar__inner::-webkit-scrollbar { display: none; }
-.cat-chip {
-  padding: 0.35em 1em;
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.35rem 1.6rem;
+  background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 100px;
-  color: var(--muted);
-  white-space: nowrap;
-  transition: all var(--ease);
+  border-radius: 18px;
+  transition: border-color var(--ease), transform var(--ease),
+              box-shadow var(--ease), border-radius 0.35s var(--ease);
 }
-.cat-chip:hover { border-color: var(--accent); color: var(--accent); }
-.cat-chip--active {
-  background: var(--gold);
+.cat-col:hover {
   border-color: var(--gold);
-  color: var(--on-accent);
+  border-radius: 8px;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(13,53,46,0.14);
+}
+.cat-col--active {
+  border-color: var(--gold);
+  box-shadow: inset 0 0 0 1px var(--gold);
+}
+.cat-col__name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
   font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--text);
+}
+.cat-col__subs {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.cat-col__count {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 780px) {
+  .cat-cols { grid-template-columns: 1fr; gap: 0.6rem; }
+  .cat-col { padding: 1rem 1.2rem; }
+  .cat-col__name { font-size: 1.1rem; }
 }
 
 /* =========================================
@@ -1048,6 +1078,27 @@ ul { list-style: none; }
   margin-bottom: 2.5rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid var(--border);
+}
+
+/* Link to the original PDF on papers converted to web pages */
+.reader__pdf { margin: -1rem 0 2rem; }
+.reader__pdf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45em 1em;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--border);
+  border-radius: var(--pill);
+  color: var(--muted);
+  transition: all var(--ease);
+}
+.reader__pdf-link:hover {
+  border-color: var(--gold);
+  color: var(--accent);
+  background: var(--accent-bg);
 }
 
 /* Prose (rendered markdown) */

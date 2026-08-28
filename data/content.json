@@ -3,50 +3,143 @@
     "name": "Jeremy Lim",
     "tagline": "Christian · Linguist · Photographer · Writer",
     "taglineLinks": [
-      { "label": "Christian",    "url": "articles.html#christian-faith" },
-      { "label": "Linguist",     "url": "articles.html#linguistics" },
-      { "label": "Photographer", "url": "gallery.html" },
-      { "label": "Writer",       "url": "articles.html#random-topics" }
+      {
+        "label": "Christian",
+        "url": "articles.html#christian-faith"
+      },
+      {
+        "label": "Linguist",
+        "url": "articles.html#linguistics"
+      },
+      {
+        "label": "Photographer",
+        "url": "gallery.html"
+      },
+      {
+        "label": "Writer",
+        "url": "articles.html#random-topics"
+      }
     ],
     "bio": "I am Jeremy Lim, an undergraduate at International Christian University in Tokyo, studying Linguistics and Information Science. My academic interests center on computational linguistics, speech science, and low-resource language research, especially Southern Min (Hokkien).\n\nBeyond research, I am involved in photography, writing, and interdisciplinary collaboration. I am interested in how faith, technology, and human dignity interact in the age of AI.",
     "photo": "images/profile/profile.jpg",
     "location": "Mitaka, Tokyo",
     "email": "linyuhao1069@gmail.com",
     "social": [
-      { "label": "YouTube",  "url": "https://www.youtube.com/@JeremyLim-n6p" },
-      { "label": "GitHub",   "url": "https://github.com/ICU-JeremyLim" }
+      {
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@JeremyLim-n6p"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/ICU-JeremyLim"
+      }
     ]
   },
-
   "cv": [
-    { "year": "2026–2027", "title": "Exchange Student, School of Informatics",        "org": "University of Edinburgh",                          "type": "education" },
-    { "year": "2025–2026", "title": "Learning Supporter, Quantitative Skills Support", "org": "ICU Teaching and Learning Center",                 "type": "work"      },
-    { "year": "2026",      "title": "Organizer, Faith × Research Symposium",       "org": "ICU C-Week",                                      "type": "community" },
-    { "year": "2026",      "title": "Paper presented at HIS PhonCog 2026 (#141)",  "org": "Phonological Cognition · Southern Min (Hokkien)",  "type": "research"  },
-    { "year": "2025–2026", "title": "Host, Alpha Course",                          "org": "International Christian University",               "type": "faith"     },
-    { "year": "2025",      "title": "Dean's List, Winter Semester",                "org": "International Christian University",               "type": "award"     },
-    { "year": "2025",      "title": "Served at ICU Worship Night",                 "org": "International Christian University",               "type": "faith"     },
-    { "year": "2024–2028", "title": "BA Linguistics & Information Science",        "org": "International Christian University, Tokyo",        "type": "education" },
-    { "year": "2024",      "title": "Dean's List, Winter Semester",                "org": "International Christian University",               "type": "award"     },
-    { "year": "2023",      "title": "Baptism",                                     "org": "",                                                "type": "faith"     }
+    {
+      "year": "2026–2027",
+      "title": "Exchange Student, School of Informatics",
+      "org": "University of Edinburgh",
+      "type": "education"
+    },
+    {
+      "year": "2025–2026",
+      "title": "Learning Supporter, Quantitative Skills Support",
+      "org": "ICU Teaching and Learning Center",
+      "type": "work"
+    },
+    {
+      "year": "2026",
+      "title": "Organizer, Faith × Research Symposium",
+      "org": "ICU C-Week",
+      "type": "community"
+    },
+    {
+      "year": "2026",
+      "title": "Paper presented at HIS PhonCog 2026 (#141)",
+      "org": "Phonological Cognition · Southern Min (Hokkien)",
+      "type": "research"
+    },
+    {
+      "year": "2025–2026",
+      "title": "Host, Alpha Course",
+      "org": "International Christian University",
+      "type": "faith"
+    },
+    {
+      "year": "2025",
+      "title": "Dean's List, Winter Semester",
+      "org": "International Christian University",
+      "type": "award"
+    },
+    {
+      "year": "2025",
+      "title": "Served at ICU Worship Night",
+      "org": "International Christian University",
+      "type": "faith"
+    },
+    {
+      "year": "2024–2028",
+      "title": "BA Linguistics & Information Science",
+      "org": "International Christian University, Tokyo",
+      "type": "education"
+    },
+    {
+      "year": "2024",
+      "title": "Dean's List, Winter Semester",
+      "org": "International Christian University",
+      "type": "award"
+    },
+    {
+      "year": "2023",
+      "title": "Baptism",
+      "org": "",
+      "type": "faith"
+    }
   ],
-
   "covers": {
-    "articles": "",
-    "photos":   "",
-    "links":    ""
+    "articles": "content/covers/ling-syntax.jpg",
+    "photos": "content/covers/topic-eastasia.jpg",
+    "links": "content/covers/ling-social.jpg"
   },
-
   "_note": "Articles live in data/articles.json (generated from the Category structure). Photos below are shown on gallery.html.",
-
   "photos": [],
-
   "links": [
-    { "title": "YouTube",    "url": "https://www.youtube.com/@JeremyLim-n6p", "icon": "youtube",   "note": "youtube.com/@JeremyLim-n6p" },
-    { "title": "GitHub",     "url": "https://github.com/ICU-JeremyLim",        "icon": "github",    "note": "github.com/ICU-JeremyLim" },
-    { "title": "Research",   "url": "https://github.com/ICU-JeremyLim/HISPhonCog2026Paper141", "icon": "link", "note": "HISPhonCog 2026 — Phonological Cognition Demo" },
-    { "title": "Instagram",  "url": "", "icon": "instagram", "note": "Coming soon" },
-    { "title": "LinkedIn",   "url": "", "icon": "linkedin",  "note": "Coming soon" },
-    { "title": "Email",      "url": "mailto:linyuhao1069@gmail.com", "icon": "mail", "note": "linyuhao1069@gmail.com" }
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@JeremyLim-n6p",
+      "icon": "youtube",
+      "note": "youtube.com/@JeremyLim-n6p"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/ICU-JeremyLim",
+      "icon": "github",
+      "note": "github.com/ICU-JeremyLim"
+    },
+    {
+      "title": "Research",
+      "url": "https://github.com/ICU-JeremyLim/HISPhonCog2026Paper141",
+      "icon": "link",
+      "note": "HISPhonCog 2026 — Phonological Cognition Demo"
+    },
+    {
+      "title": "Instagram",
+      "url": "",
+      "icon": "instagram",
+      "note": "Coming soon"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "",
+      "icon": "linkedin",
+      "note": "Coming soon"
+    },
+    {
+      "title": "Email",
+      "url": "mailto:linyuhao1069@gmail.com",
+      "icon": "mail",
+      "note": "linyuhao1069@gmail.com"
+    }
   ]
 }
