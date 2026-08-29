@@ -1,0 +1,19 @@
+# jeremylim.space
+
+User-agent: *
+Allow: /
+
+# Personal writing that should stay reachable by direct link but not surface
+# in search results. Blocking the source files here matters because the raw
+# Markdown is fetchable on its own and would otherwise be indexed as plain
+# text, independently of the reader page.
+Disallow: /content/articles/worship-is-the-very-purpose-of-life.md
+Disallow: /content/articles/the-son-of-man-came-to-seek-and-to-save-the-lost.md
+Disallow: /content/articles/saikou-no-michi.md
+Disallow: /content/articles/what-affects-icu-students-openness-to-different-worldviews.md
+
+# Research paper containing other people's data — unlisted, direct link only.
+Disallow: /article.html?id=what-affects-icu-students-openness-to-different-worldviews
+
+# Working data, not pages.
+Disallow: /data/
