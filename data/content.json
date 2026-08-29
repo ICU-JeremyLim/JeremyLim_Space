@@ -107,7 +107,8 @@
     {
       "file": "images/gallery/IMG_9121.jpg",
       "caption": "",
-      "date": "2026-01-01"
+      "date": "2026-01-01",
+      "thumb": "images/gallery/thumbs/IMG_9121.jpg"
     }
   ],
   "links": [

@@ -550,9 +550,13 @@
     if (empty) empty.style.display = 'none';
 
     grid.innerHTML = photos.map(function (item, i) {
+      // Grid loads the thumbnail; the lightbox loads the full-size file.
+      var src = item.thumb || item.file;
+      var cap = item.caption
+        ? '<div class="photo-caption">' + esc(item.caption) + '</div>' : '';
       return '<div class="photo-item reveal" data-idx="' + i + '">' +
-        '<img src="' + esc(item.file) + '" alt="' + esc(item.caption || '') + '" loading="lazy">' +
-        '<div class="photo-caption">' + esc(item.caption || '') + '</div></div>';
+        '<img src="' + esc(src) + '" alt="' + esc(item.caption || '') + '" loading="lazy">' +
+        cap + '</div>';
     }).join('');
 
     initLightbox(grid, photos);

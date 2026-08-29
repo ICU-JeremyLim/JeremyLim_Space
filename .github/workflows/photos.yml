@@ -1,0 +1,56 @@
+name: Process photos
+
+# Drop any photo into photos-inbox/ — RAW from the camera, or an oversized
+# JPEG from a phone — and this converts it, strips EXIF (GPS included),
+# builds a thumbnail, registers it in data/content.json and commits the
+# result. The original is removed so RAW files do not sit in the repository.
+
+on:
+  push:
+    paths:
+      - 'photos-inbox/**'
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: process-photos
+  cancel-in-progress: false
+
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install image libraries
+        run: |
+          python -m pip install --quiet --upgrade pip
+          # Pillow: resizing and JPEG output.  rawpy + numpy: decode camera RAW.
+          # pillow-heif: iPhone HEIC.  All three are pure-wheel installs.
+          python -m pip install --quiet Pillow rawpy numpy pillow-heif
+
+      - name: Convert, resize and strip EXIF
+        run: python3 scripts/process-photos.py
+
+      - name: Commit the processed photos
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing changed — no new photos to publish."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Publish photos from inbox
+
+          Converted to web JPEG, resized, thumbnails generated and EXIF
+          stripped (including GPS). Originals removed from photos-inbox/."
+          git push
