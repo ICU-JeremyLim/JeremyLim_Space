@@ -105,10 +105,154 @@
   "_note": "Articles live in data/articles.json (generated from the Category structure). Photos below are shown on gallery.html.",
   "photos": [
     {
+      "file": "images/gallery/20260723170603-img-2376.jpg",
+      "thumb": "images/gallery/thumbs/20260723170603-img-2376.jpg",
+      "caption": "",
+      "date": "2026-07-23"
+    },
+    {
+      "file": "images/gallery/20260723170624-img-2377.jpg",
+      "thumb": "images/gallery/thumbs/20260723170624-img-2377.jpg",
+      "caption": "",
+      "date": "2026-07-23"
+    },
+    {
+      "file": "images/gallery/20260711165907-img-0841.jpg",
+      "thumb": "images/gallery/thumbs/20260711165907-img-0841.jpg",
+      "caption": "",
+      "date": "2026-07-11"
+    },
+    {
+      "file": "images/gallery/20260703183108-img-0659.jpg",
+      "thumb": "images/gallery/thumbs/20260703183108-img-0659.jpg",
+      "caption": "",
+      "date": "2026-07-03"
+    },
+    {
+      "file": "images/gallery/img-20260624-211640.jpg",
+      "thumb": "images/gallery/thumbs/img-20260624-211640.jpg",
+      "caption": "",
+      "date": "2026-06-24"
+    },
+    {
+      "file": "images/gallery/img-20260611-145657.jpg",
+      "thumb": "images/gallery/thumbs/img-20260611-145657.jpg",
+      "caption": "",
+      "date": "2026-06-11"
+    },
+    {
+      "file": "images/gallery/20260524094242-img-0360.jpg",
+      "thumb": "images/gallery/thumbs/20260524094242-img-0360.jpg",
+      "caption": "",
+      "date": "2026-05-24"
+    },
+    {
+      "file": "images/gallery/20260524103023-img-0409.jpg",
+      "thumb": "images/gallery/thumbs/20260524103023-img-0409.jpg",
+      "caption": "",
+      "date": "2026-05-24"
+    },
+    {
+      "file": "images/gallery/img-20260524-112246.jpg",
+      "thumb": "images/gallery/thumbs/img-20260524-112246.jpg",
+      "caption": "",
+      "date": "2026-05-24"
+    },
+    {
+      "file": "images/gallery/img-20260524-112254.jpg",
+      "thumb": "images/gallery/thumbs/img-20260524-112254.jpg",
+      "caption": "",
+      "date": "2026-05-24"
+    },
+    {
+      "file": "images/gallery/20260404105739-img-9812.jpg",
+      "thumb": "images/gallery/thumbs/20260404105739-img-9812.jpg",
+      "caption": "",
+      "date": "2026-04-04"
+    },
+    {
+      "file": "images/gallery/20260403084228-img-9665.jpg",
+      "thumb": "images/gallery/thumbs/20260403084228-img-9665.jpg",
+      "caption": "",
+      "date": "2026-04-03"
+    },
+    {
+      "file": "images/gallery/20260403084736-img-9676.jpg",
+      "thumb": "images/gallery/thumbs/20260403084736-img-9676.jpg",
+      "caption": "",
+      "date": "2026-04-03"
+    },
+    {
+      "file": "images/gallery/20260403112542-img-9680.jpg",
+      "thumb": "images/gallery/thumbs/20260403112542-img-9680.jpg",
+      "caption": "",
+      "date": "2026-04-03"
+    },
+    {
+      "file": "images/gallery/img-20260309-152327.jpg",
+      "thumb": "images/gallery/thumbs/img-20260309-152327.jpg",
+      "caption": "",
+      "date": "2026-03-09"
+    },
+    {
+      "file": "images/gallery/img-20260228-100007.jpg",
+      "thumb": "images/gallery/thumbs/img-20260228-100007.jpg",
+      "caption": "",
+      "date": "2026-02-28"
+    },
+    {
+      "file": "images/gallery/img-20260226-160842.jpg",
+      "thumb": "images/gallery/thumbs/img-20260226-160842.jpg",
+      "caption": "",
+      "date": "2026-02-26"
+    },
+    {
+      "file": "images/gallery/20260208093200-img-9152.jpg",
+      "thumb": "images/gallery/thumbs/20260208093200-img-9152.jpg",
+      "caption": "",
+      "date": "2026-02-08"
+    },
+    {
+      "file": "images/gallery/20260208110206-img-9169.jpg",
+      "thumb": "images/gallery/thumbs/20260208110206-img-9169.jpg",
+      "caption": "",
+      "date": "2026-02-08"
+    },
+    {
+      "file": "images/gallery/20260208110719-img-9184.jpg",
+      "thumb": "images/gallery/thumbs/20260208110719-img-9184.jpg",
+      "caption": "",
+      "date": "2026-02-08"
+    },
+    {
       "file": "images/gallery/IMG_9121.jpg",
       "caption": "",
       "date": "2026-01-01",
       "thumb": "images/gallery/thumbs/IMG_9121.jpg"
+    },
+    {
+      "file": "images/gallery/img-20250902-181116.jpg",
+      "thumb": "images/gallery/thumbs/img-20250902-181116.jpg",
+      "caption": "",
+      "date": "2025-09-02"
+    },
+    {
+      "file": "images/gallery/img-20250706-091739.jpg",
+      "thumb": "images/gallery/thumbs/img-20250706-091739.jpg",
+      "caption": "",
+      "date": "2025-07-06"
+    },
+    {
+      "file": "images/gallery/img-20250405-160102.jpg",
+      "thumb": "images/gallery/thumbs/img-20250405-160102.jpg",
+      "caption": "",
+      "date": "2025-04-05"
+    },
+    {
+      "file": "images/gallery/img-20250404-165401.jpg",
+      "thumb": "images/gallery/thumbs/img-20250404-165401.jpg",
+      "caption": "",
+      "date": "2025-04-04"
     }
   ],
   "links": [

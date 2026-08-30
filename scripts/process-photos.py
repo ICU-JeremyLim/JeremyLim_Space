@@ -59,12 +59,39 @@ def slugify(name):
     return s or "photo"
 
 
-def shot_date(path, img=None):
-    """EXIF capture date if present, else the file's modification time.
+FILENAME_DATE = [
+    re.compile(r"(20\d{2})(\d{2})(\d{2})\d{6}"),        # 20260208093200_IMG_9152
+    re.compile(r"(20\d{2})(\d{2})(\d{2})[_-]\d{6}"),     # IMG_20250404_165401
+    re.compile(r"(20\d{2})[-_.]?(\d{2})[-_.]?(\d{2})"),  # any plain YYYYMMDD
+]
 
-    Read before the EXIF is discarded, so the gallery keeps its chronology
+
+def date_from_name(path):
+    """Many cameras and phones put the date in the filename.
+
+    Worth trying: exported files often have their EXIF timestamps stripped,
+    and without a date every photo would land on today and the gallery would
+    lose its chronology.
+    """
+    base = os.path.basename(path)
+    for pat in FILENAME_DATE:
+        m = pat.search(base)
+        if m:
+            y, mo, d = m.groups()
+            try:
+                return datetime(int(y), int(mo), int(d)).strftime("%Y-%m-%d")
+            except ValueError:
+                continue
+    return None
+
+
+def shot_date(path, img=None):
+    """Capture date: EXIF first, then the filename, then file mtime.
+
+    EXIF is read before it is discarded, so the gallery keeps its chronology
     without keeping the location data that sits alongside it.
     """
+    exif_fallback = None
     try:
         if img is not None and ExifTags is not None:
             exif = img.getexif()
@@ -76,11 +103,25 @@ def shot_date(path, img=None):
                 except Exception:
                     pass
                 tags = {ExifTags.TAGS.get(k, k): v for k, v in merged.items()}
-                for key in ("DateTimeOriginal", "DateTimeDigitized", "DateTime"):
+                # Only these two mean "when the photo was taken". DateTime is
+                # "when the file was last changed", so an export sets it to
+                # today — checked below the filename, not above it.
+                for key in ("DateTimeOriginal", "DateTimeDigitized"):
                     raw = tags.get(key)
                     if raw:
                         return datetime.strptime(
                             str(raw).strip(), "%Y:%m:%d %H:%M:%S").strftime("%Y-%m-%d")
+                exif_fallback = tags.get("DateTime")
+    except Exception:
+        pass
+
+    from_name = date_from_name(path)
+    if from_name:
+        return from_name
+    try:
+        if exif_fallback:
+            return datetime.strptime(
+                str(exif_fallback).strip(), "%Y:%m:%d %H:%M:%S").strftime("%Y-%m-%d")
     except Exception:
         pass
     return datetime.fromtimestamp(os.path.getmtime(path)).strftime("%Y-%m-%d")
