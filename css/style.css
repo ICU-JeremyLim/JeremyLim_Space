@@ -1146,6 +1146,73 @@ ul { list-style: none; }
 }
 
 /* =========================================
+   Role page — one per facet of the introduction
+   ========================================= */
+.role { padding: calc(var(--nav-h) + 3rem) 0 5rem; }
+
+.role-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.5rem 0 2rem;
+}
+.role-switch__item {
+  padding: 0.35em 0.95em;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--border);
+  border-radius: var(--pill);
+  color: var(--muted);
+  transition: all var(--ease);
+}
+.role-switch__item:hover { border-color: var(--gold); color: var(--accent); }
+.role-switch__item--active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--on-accent);
+}
+
+.role__hero {
+  border-radius: 18px;
+  overflow: hidden;
+  aspect-ratio: 5 / 2;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.role__hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.role__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+.role__lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  font-style: italic;
+}
+.role__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .role__hero { aspect-ratio: 3 / 2; }
+  .role__lead { font-size: 1rem; }
+}
+
+/* =========================================
    Empty state / code block
    ========================================= */
 .empty-state {

@@ -236,6 +236,15 @@
 
     if (page === 'article') { renderReader(); return; }
 
+    if (page === 'about') {
+      fetch('data/content.json?v=' + Date.now())
+        .then(function (r) { return r.json(); })
+        .then(renderRole)
+        .then(function () { setTimeout(initReveal, 40); })
+        .catch(function (e) { console.warn('content.json failed', e); });
+      return;
+    }
+
     fetch('data/content.json?v=' + Date.now())
       .then(function (r) { return r.json(); })
       .then(function (data) {
@@ -274,8 +283,13 @@
       tagEl.textContent = p.tagline || '';
     }
 
+    // Display the address with "(at)" so scrapers do not lift it verbatim,
+    // while the mailto: link still works for a real visitor.
     var emailEl = document.getElementById('profile-email');
-    if (emailEl && p.email) { emailEl.textContent = p.email; emailEl.href = 'mailto:' + p.email; }
+    if (emailEl && p.email) {
+      emailEl.textContent = p.email.replace('@', ' (at) ');
+      emailEl.href = 'mailto:' + p.email;
+    }
 
     var socialsEl = document.getElementById('profile-socials');
     if (socialsEl && p.social) {
@@ -334,6 +348,64 @@
   function setText(id, val) {
     var el = document.getElementById(id);
     if (el && val) el.textContent = val;
+  }
+
+  /* =========================
+     ROLE PAGE  (about.html?role=…)
+     One page per facet of the introduction, so each label on the home page
+     leads somewhere that explains it rather than dumping you in a list.
+     ========================= */
+  var ROLE_ORDER = ['christian', 'linguist', 'photographer', 'writer'];
+
+  function renderRole(data) {
+    var roles = data.roles || {};
+    var key = (qs('role') || 'christian').toLowerCase();
+    var r = roles[key];
+
+    var titleEl = document.getElementById('role-title');
+    var bodyEl  = document.getElementById('role-body');
+
+    if (!r) {
+      titleEl.textContent = 'Not found';
+      bodyEl.innerHTML = '<p>That section does not exist. ' +
+        '<a href="index.html">Back to home</a>.</p>';
+      return;
+    }
+
+    document.title = r.title + ' — Jeremy Lim';
+    titleEl.textContent = r.title;
+
+    var leadEl = document.getElementById('role-lead');
+    if (leadEl) leadEl.textContent = r.lead || '';
+
+    var heroEl = document.getElementById('role-hero');
+    if (heroEl && r.cover) {
+      heroEl.innerHTML = '<img src="' + esc(r.cover) + '" alt="" ' +
+        'onerror="this.parentNode.style.display=\'none\'">';
+      heroEl.style.display = '';
+    }
+
+    bodyEl.innerHTML = (r.body || '').split(/\n\n+/)
+      .map(function (p) { return '<p>' + esc(p.trim()) + '</p>'; }).join('');
+
+    var linksEl = document.getElementById('role-links');
+    if (linksEl && r.links && r.links.length) {
+      linksEl.innerHTML = r.links.map(function (l) {
+        return '<a class="btn btn--gold" href="' + esc(l.url) + '">' +
+          esc(l.label) + ' &rarr;</a>';
+      }).join('');
+    }
+
+    // Let people move between the four without returning to the home page.
+    var switchEl = document.getElementById('role-switch');
+    if (switchEl) {
+      switchEl.innerHTML = ROLE_ORDER.filter(function (k) { return roles[k]; })
+        .map(function (k) {
+          return '<a href="about.html?role=' + k + '" class="role-switch__item' +
+            (k === key ? ' role-switch__item--active' : '') + '">' +
+            esc(roles[k].title) + '</a>';
+        }).join('');
+    }
   }
 
   /* =========================
@@ -607,11 +679,16 @@
     list.innerHTML = data.links.map(function (item) {
       var has = item.url && item.url !== '';
       var icon = ICONS[item.icon] || ICONS.link;
+      // Same "(at)" treatment for any address shown on the links page.
+      var note = String(item.note || '');
+      if (item.icon === 'mail' || note.indexOf('@') !== -1) {
+        note = note.replace(/@/g, ' (at) ');
+      }
       return '<a ' + (has ? 'href="' + esc(item.url) + '" target="_blank" rel="noopener"' : '') +
         ' class="link-item reveal' + (has ? '' : ' link-item--disabled') + '">' +
         '<div class="link-icon">' + icon + '</div>' +
         '<div><div class="link-title">' + esc(item.title) + '</div>' +
-        '<div class="link-note">' + esc(item.note || '') + '</div></div>' +
+        '<div class="link-note">' + esc(note) + '</div></div>' +
         '<span class="link-arrow">' + ARROW + '</span></a>';
     }).join('');
   }
