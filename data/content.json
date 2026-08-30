@@ -5,19 +5,19 @@
     "taglineLinks": [
       {
         "label": "Christian",
-        "url": "about.html?role=christian"
+        "url": "faith.html"
       },
       {
         "label": "Linguist",
-        "url": "about.html?role=linguist"
+        "url": "research.html"
       },
       {
         "label": "Photographer",
-        "url": "about.html?role=photographer"
+        "url": "gallery.html"
       },
       {
         "label": "Writer",
-        "url": "about.html?role=writer"
+        "url": "opinions.html"
       }
     ],
     "bio": "I am Jeremy Lim, an undergraduate at International Christian University in Tokyo, studying Linguistics and Information Science. My academic interests center on computational linguistics, speech science, and low-resource language research, especially Southern Min (Hokkien).\n\nBeyond research, I am involved in photography, writing, and interdisciplinary collaboration. I am interested in how faith, technology, and human dignity interact in the age of AI.",
@@ -98,9 +98,11 @@
     }
   ],
   "covers": {
-    "articles": "content/covers/ling-syntax.jpg",
-    "photos": "content/covers/topic-eastasia.jpg",
-    "links": "content/covers/ling-social.jpg"
+    "research": "images/gallery/thumbs/img-20260611-145657.jpg",
+    "faith": "images/gallery/thumbs/20260208093200-img-9152.jpg",
+    "opinions": "images/gallery/thumbs/img-20260624-211640.jpg",
+    "photos": "images/gallery/thumbs/20260711165907-img-0841.jpg",
+    "links": "images/gallery/thumbs/img-20250902-181116.jpg"
   },
   "_note": "Articles live in data/articles.json (generated from the Category structure). Photos below are shown on gallery.html.",
   "photos": [
@@ -293,54 +295,36 @@
       "note": "linyuhao1069@gmail.com"
     }
   ],
-  "roles": {
-    "christian": {
-      "title": "Christian",
-      "lead": "Faith is not one interest among others for me. It is the thing that reorganised everything else.",
-      "cover": "content/covers/faith-testimony.jpg",
-      "body": "I came to faith at fourteen, at a point where I could not find a reason for my own life, and was baptised in 2023. What changed was not that my circumstances improved but that my worth stopped depending on them — I was loved for existing rather than for achieving, and that is still the thing I return to.\n\nAt ICU I try to put that into practice rather than only hold it privately. I served at Worship Night in 2025, and since 2025 I have hosted the Alpha Course, which is a space for people with genuine questions rather than settled answers. In 2026 I organised the Faith × Research Symposium during C-Week, because I do not think faith and academic work belong in separate rooms.\n\nMy sense of calling is toward East Asia — translation of scripture into low-resource languages, reconciliation between Japan and China, and unity across churches. I hold that loosely. It is a direction, not a plan.",
-      "links": [
-        {
-          "label": "Read my testimonies",
-          "url": "articles.html#christian-faith"
-        }
-      ]
+  "sections": {
+    "research": {
+      "title": "Research",
+      "label": "Linguistics & Speech Science",
+      "cover": "images/gallery/img-20260611-145657.jpg",
+      "intro": "I study Linguistics and Information Science at International Christian University, and from 2026 I will be on exchange at the University of Edinburgh's School of Informatics. My work sits between phonetics, speech science and machine learning.\n\nMost of it concerns Southern Min — Hokkien, Taiwanese — and its checked tones: the abrupt syllables ending in /k/, /p/, /t/ and a glottal stop. They form a clean contrast in the phonology, but acoustically the cues scatter across duration, formant transitions and voice quality, which makes them a good test of what is really separable in the signal. Low-resource languages are where the interesting problems are: there is no large corpus to fall back on, so you have to be honest about what the data can support."
     },
-    "linguist": {
-      "title": "Linguist",
-      "lead": "I work on the sounds of a language that most people who speak it were told not to write down.",
-      "cover": "content/covers/ling-phonology.jpg",
-      "body": "I study Linguistics and Information Science at International Christian University, and from 2026 to 2027 I will be on exchange at the University of Edinburgh's School of Informatics. My work sits between phonetics, speech science and machine learning.\n\nMost of my research is on Southern Min — Hokkien, Taiwanese — and specifically its checked tones: the abrupt syllables ending in /k/, /p/, /t/ and a glottal stop. They form a clean contrast in the phonology, but acoustically the cues are scattered across duration, formant transitions, energy decay and voice quality, which makes them a good test of what is actually separable in the signal. I presented that work at HIS PhonCog 2026, comparing machine classification against how listeners from five language backgrounds hear the same contrasts.\n\nI came to this partly through Hokkien being a language of my own background, and partly because low-resource languages are where the interesting problems are — there is no large corpus to fall back on, so you have to think carefully about what the data can and cannot support.",
-      "links": [
-        {
-          "label": "Read my linguistics papers",
-          "url": "articles.html#linguistics"
-        }
-      ]
+    "faith": {
+      "title": "Faith",
+      "label": "Testimony & Christian History",
+      "cover": "images/gallery/20260208093200-img-9152.jpg",
+      "intro": "I came to faith at fourteen and was baptised in 2023. What changed was not that my circumstances improved, but that my worth stopped depending on them.\n\nAt ICU I try to put that into practice rather than hold it privately: serving at Worship Night, hosting the Alpha Course for people with real questions rather than settled answers, and organising the Faith × Research Symposium during C-Week — because I do not think faith and academic work belong in separate rooms. Collected here are testimonies given at church and chapel, alongside historical research on Christianity in Japan and China."
     },
-    "photographer": {
-      "title": "Photographer",
-      "lead": "Mostly quiet things: light through trees, a mountain behind power lines, a campus in snow.",
-      "cover": "content/covers/topic-eastasia.jpg",
-      "body": "I photograph what I walk past. Very little of it is staged — it is mostly Tokyo and the places I travel to, taken on the way to somewhere else.\n\nWhat I look for is ordinary scenes that hold still for a moment: morning light on a wooden hut, cherry blossom over a bicycle rack, Fuji framed by tangled wires. I like the wires. A photograph of the mountain alone is a postcard; the wires make it a place where someone actually lives.\n\nI shoot digital and work in natural light almost entirely.",
-      "links": [
-        {
-          "label": "See the gallery",
-          "url": "gallery.html"
-        }
-      ]
+    "opinions": {
+      "title": "Opinions",
+      "label": "Education, Society & East Asia",
+      "cover": "images/gallery/img-20260624-211640.jpg",
+      "intro": "Essays on the things I keep returning to: what cramming education does to children in China, how Chinese residents are seen in Japan, the ethics of language policy when a state decides which languages count, and where science and scripture meet.\n\nThe common thread is what happens to people at the edges of systems — of an education system, of a language policy, of a society's idea of who belongs. These are arguments rather than conclusions, and I would rather be disagreed with than ignored."
     },
-    "writer": {
-      "title": "Writer",
-      "lead": "Essays and papers across faith, language, education and East Asia — in English, Japanese and Chinese.",
-      "cover": "content/covers/ling-syntax.jpg",
-      "body": "I write in three languages, and what I write splits roughly three ways.\n\nThere are testimonies and talks given at church and at ICU chapel — the most personal things here, and the ones I was most hesitant to publish. There is academic work: phonology and phonetics papers, a syntax report, and a study on what shapes students' openness to worldviews other than their own. And there are essays on things I keep returning to — China's education system and what cramming does to children, Chinese residents in Japan and how they are seen, the ethics of language policy when a state decides which languages count.\n\nThe common thread is probably that I am interested in what happens to people at the edges of systems — of an education system, of a language policy, of a society's idea of who belongs.",
-      "links": [
-        {
-          "label": "Read everything",
-          "url": "articles.html"
-        }
-      ]
+    "photos": {
+      "title": "Photos",
+      "label": "Photography",
+      "cover": "images/gallery/20260711165907-img-0841.jpg",
+      "intro": "I photograph what I walk past — mostly Tokyo and the places I travel to, taken on the way to somewhere else. Ordinary scenes that hold still for a moment: morning light on a wooden hut, blossom over a bicycle rack, Fuji framed by tangled wires. I like the wires. The mountain alone is a postcard; the wires make it a place where someone lives."
+    },
+    "links": {
+      "title": "Links",
+      "label": "Elsewhere",
+      "cover": "images/gallery/img-20250902-181116.jpg",
+      "intro": "Where to find me online."
     }
   }
 }

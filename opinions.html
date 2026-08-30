@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Jeremy Lim</title>
+  <title>Opinions — Jeremy Lim</title>
+  <meta name="description" content="Essays on education, society and East Asia by Jeremy Lim.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script data-role="theme-preload">(function(){try{var t=localStorage.getItem("theme")||"dark";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
-<body>
+<body data-section="opinions" data-category="Opinions">
 
   <nav class="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Jeremy Lim</a>
       <div class="nav__links">
-        <a href="index.html"    class="nav__link">Home</a>
-        <a href="articles.html" class="nav__link">Articles</a>
-        <a href="gallery.html"  class="nav__link">Photos</a>
-        <a href="links.html"    class="nav__link">Links</a>
+        <a href="index.html"     class="nav__link">Home</a>
+        <a href="research.html"  class="nav__link">Research</a>
+        <a href="faith.html"     class="nav__link">Faith</a>
+        <a href="opinions.html"  class="nav__link nav__link--active">Opinions</a>
+        <a href="gallery.html"   class="nav__link">Photos</a>
+        <a href="links.html"     class="nav__link">Links</a>
       </div>
       <div class="nav__controls">
         <button class="theme-btn" aria-label="Toggle theme">
@@ -31,34 +34,38 @@
     </div>
     <div class="nav__mobile">
       <a href="index.html"    class="nav__link">Home</a>
-      <a href="articles.html" class="nav__link">Articles</a>
+      <a href="research.html" class="nav__link">Research</a>
+      <a href="faith.html"    class="nav__link">Faith</a>
+      <a href="opinions.html" class="nav__link">Opinions</a>
       <a href="gallery.html"  class="nav__link">Photos</a>
       <a href="links.html"    class="nav__link">Links</a>
     </div>
   </nav>
 
-  <article class="role">
+  <header class="section-head">
     <div class="container container--narrow">
-      <a href="index.html" class="reader__back">&larr; Back to home</a>
-
-      <!-- Switch between the four facets without going back to the homepage -->
-      <nav class="role-switch" id="role-switch" aria-label="Sections"></nav>
-
-      <div class="role__hero" id="role-hero" style="display:none"></div>
-      <h1 class="role__title" id="role-title">Loading…</h1>
-      <p  class="role__lead"  id="role-lead"></p>
-      <div class="prose"      id="role-body"></div>
-      <div class="role__links" id="role-links"></div>
+      <div class="section-head__cover" id="section-cover" style="display:none"></div>
+      <div class="section-label" id="section-label"></div>
+      <h1 class="section-head__title" id="section-title">Opinions</h1>
+      <div class="section-head__intro" id="section-intro"></div>
     </div>
-  </article>
+  </header>
+
+  <section class="articles">
+    <div class="container">
+      <div id="section-list"></div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <span>&copy; <span id="yr"></span> Jeremy Lim</span>
-        <div style="display:flex;gap:1.5rem;">
+        <div style="display:flex;gap:1.25rem;flex-wrap:wrap;">
           <a href="index.html">Home</a>
-          <a href="articles.html">Articles</a>
+          <a href="research.html">Research</a>
+          <a href="faith.html">Faith</a>
+          <a href="opinions.html">Opinions</a>
           <a href="gallery.html">Photos</a>
           <a href="links.html">Links</a>
         </div>

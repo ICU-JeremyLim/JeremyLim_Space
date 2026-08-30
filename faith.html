@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Articles — Jeremy Lim</title>
-  <meta name="description" content="Writing on Christian faith, linguistics, education, and East Asia by Jeremy Lim.">
+  <title>Faith — Jeremy Lim</title>
+  <meta name="description" content="Testimony, talks and historical research on Christianity by Jeremy Lim.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script data-role="theme-preload">(function(){try{var t=localStorage.getItem("theme")||"dark";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
-<body>
+<body data-section="faith" data-category="Faith">
 
   <nav class="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Jeremy Lim</a>
       <div class="nav__links">
-        <a href="index.html"    class="nav__link">Home</a>
-        <a href="articles.html" class="nav__link nav__link--active">Articles</a>
-        <a href="gallery.html"  class="nav__link">Photos</a>
-        <a href="links.html"    class="nav__link">Links</a>
+        <a href="index.html"     class="nav__link">Home</a>
+        <a href="research.html"  class="nav__link">Research</a>
+        <a href="faith.html"     class="nav__link nav__link--active">Faith</a>
+        <a href="opinions.html"  class="nav__link">Opinions</a>
+        <a href="gallery.html"   class="nav__link">Photos</a>
+        <a href="links.html"     class="nav__link">Links</a>
       </div>
       <div class="nav__controls">
         <button class="theme-btn" aria-label="Toggle theme">
@@ -32,46 +34,26 @@
     </div>
     <div class="nav__mobile">
       <a href="index.html"    class="nav__link">Home</a>
-      <a href="articles.html" class="nav__link">Articles</a>
+      <a href="research.html" class="nav__link">Research</a>
+      <a href="faith.html"    class="nav__link">Faith</a>
+      <a href="opinions.html" class="nav__link">Opinions</a>
       <a href="gallery.html"  class="nav__link">Photos</a>
       <a href="links.html"    class="nav__link">Links</a>
     </div>
   </nav>
 
-  <header class="page-header">
-    <div class="container">
-      <div class="section-label">Writing &amp; Research</div>
-      <h1>Articles</h1>
-      <p>Essays, testimonies, and academic work across faith, language, and society.</p>
+  <header class="section-head">
+    <div class="container container--narrow">
+      <div class="section-head__cover" id="section-cover" style="display:none"></div>
+      <div class="section-label" id="section-label"></div>
+      <h1 class="section-head__title" id="section-title">Faith</h1>
+      <div class="section-head__intro" id="section-intro"></div>
     </div>
   </header>
 
-  <!-- Category columns -->
-  <section class="cat-cols-wrap">
-    <div class="container">
-      <div class="cat-cols" id="cat-cols">
-        <a href="#christian-faith" class="cat-col" data-cat="christian-faith">
-          <span class="cat-col__name">Christian Faith</span>
-          <span class="cat-col__subs"></span>
-          <span class="cat-col__count"></span>
-        </a>
-        <a href="#linguistics" class="cat-col" data-cat="linguistics">
-          <span class="cat-col__name">Linguistics</span>
-          <span class="cat-col__subs"></span>
-          <span class="cat-col__count"></span>
-        </a>
-        <a href="#random-topics" class="cat-col" data-cat="random-topics">
-          <span class="cat-col__name">Random Topics</span>
-          <span class="cat-col__subs"></span>
-          <span class="cat-col__count"></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="articles">
     <div class="container">
-      <div id="articles-index"></div>
+      <div id="section-list"></div>
     </div>
   </section>
 
@@ -79,8 +61,11 @@
     <div class="container">
       <div class="footer__inner">
         <span>&copy; <span id="yr"></span> Jeremy Lim</span>
-        <div style="display:flex;gap:1.5rem;">
+        <div style="display:flex;gap:1.25rem;flex-wrap:wrap;">
           <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="faith.html">Faith</a>
+          <a href="opinions.html">Opinions</a>
           <a href="gallery.html">Photos</a>
           <a href="links.html">Links</a>
         </div>

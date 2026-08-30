@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Article — Jeremy Lim</title>
+  <title>Research — Jeremy Lim</title>
+  <meta name="description" content="Linguistics, phonetics and speech science by Jeremy Lim.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script data-role="theme-preload">(function(){try{var t=localStorage.getItem("theme")||"dark";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
-<body>
+<body data-section="research" data-category="Research">
 
   <nav class="nav">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Jeremy Lim</a>
       <div class="nav__links">
         <a href="index.html"     class="nav__link">Home</a>
-        <a href="research.html"  class="nav__link">Research</a>
+        <a href="research.html"  class="nav__link nav__link--active">Research</a>
         <a href="faith.html"     class="nav__link">Faith</a>
         <a href="opinions.html"  class="nav__link">Opinions</a>
         <a href="gallery.html"   class="nav__link">Photos</a>
@@ -41,25 +42,26 @@
     </div>
   </nav>
 
-  <!-- Reading progress -->
-  <div class="read-progress"><div class="read-progress__bar" id="read-bar"></div></div>
-
-  <article class="reader">
+  <header class="section-head">
     <div class="container container--narrow">
-      <a href="index.html" class="reader__back">&larr; Back</a>
-      <div class="reader__hero" id="reader-hero" style="display:none"></div>
-      <div class="reader__meta" id="reader-meta"></div>
-      <h1 class="reader__title" id="reader-title">Loading…</h1>
-      <div class="reader__pdf" id="reader-pdf" style="display:none"></div>
-      <div class="prose" id="reader-body"></div>
+      <div class="section-head__cover" id="section-cover" style="display:none"></div>
+      <div class="section-label" id="section-label"></div>
+      <h1 class="section-head__title" id="section-title">Research</h1>
+      <div class="section-head__intro" id="section-intro"></div>
     </div>
-  </article>
+  </header>
+
+  <section class="articles">
+    <div class="container">
+      <div id="section-list"></div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <span>&copy; <span id="yr"></span> Jeremy Lim</span>
-        <div style="display:flex;gap:1.5rem;">
+        <div style="display:flex;gap:1.25rem;flex-wrap:wrap;">
           <a href="index.html">Home</a>
           <a href="research.html">Research</a>
           <a href="faith.html">Faith</a>

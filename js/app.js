@@ -236,12 +236,17 @@
 
     if (page === 'article') { renderReader(); return; }
 
-    if (page === 'about') {
-      fetch('data/content.json?v=' + Date.now())
-        .then(function (r) { return r.json(); })
-        .then(renderRole)
-        .then(function () { setTimeout(initReveal, 40); })
-        .catch(function (e) { console.warn('content.json failed', e); });
+    // Research / Faith / Opinions each render one category with its own intro.
+    var sectionKey = document.body.getAttribute('data-section');
+    if (sectionKey) {
+      Promise.all([
+        fetch('data/content.json?v=' + Date.now()).then(function (r) { return r.json(); }),
+        fetch('data/articles.json?v=' + Date.now()).then(function (r) { return r.json(); })
+      ]).then(function (res) {
+        renderSection(res[0], res[1], sectionKey,
+                      document.body.getAttribute('data-category'));
+        setTimeout(initReveal, 40);
+      }).catch(function (e) { console.warn('section load failed', e); });
       return;
     }
 
@@ -318,15 +323,20 @@
     fetch('data/articles.json?v=' + Date.now())
       .then(function (r) { return r.json(); })
       .then(function (arts) {
+        var live = arts.filter(function (a) { return !a.unlisted; });
+        var n = function (cat) {
+          return live.filter(function (a) { return a.category === cat; }).length;
+        };
         paintModules(covers, {
-          articles: arts.length,
+          research: n('Research'),
+          faith:    n('Faith'),
+          opinions: n('Opinions'),
           photos:   (data.photos || []).length,
           links:    (data.links || []).filter(function (l) { return l.url; }).length
         });
       })
       .catch(function () {
         paintModules(covers, {
-          articles: 0,
           photos: (data.photos || []).length,
           links: (data.links || []).filter(function (l) { return l.url; }).length
         });
@@ -334,14 +344,16 @@
   }
 
   function paintModules(covers, counts) {
-    ['articles', 'photos', 'links'].forEach(function (key) {
+    ['research', 'faith', 'opinions', 'photos', 'links'].forEach(function (key) {
       var card = document.querySelector('.module-card[data-module="' + key + '"]');
       if (!card) return;
       var bg = card.querySelector('.module-card__bg');
       if (bg && covers[key]) bg.style.backgroundImage = 'url(' + covers[key] + ')';
       var sub = card.querySelector('.module-card__sub');
-      if (sub) sub.textContent = counts[key] + ' ' + (counts[key] === 1
-        ? key.replace(/s$/, '') : key);
+      if (sub && counts[key] !== undefined) {
+        var unit = key === 'photos' ? 'photo' : (key === 'links' ? 'link' : 'piece');
+        sub.textContent = counts[key] + ' ' + unit + (counts[key] === 1 ? '' : 's');
+      }
     });
   }
 
@@ -351,61 +363,56 @@
   }
 
   /* =========================
-     ROLE PAGE  (about.html?role=…)
-     One page per facet of the introduction, so each label on the home page
-     leads somewhere that explains it rather than dumping you in a list.
+     SECTION PAGE  (research / faith / opinions)
+     One category per page, introduced in its own words before the list.
      ========================= */
-  var ROLE_ORDER = ['christian', 'linguist', 'photographer', 'writer'];
+  function renderSection(content, items, key, category) {
+    var sec = (content.sections || {})[key] || {};
 
-  function renderRole(data) {
-    var roles = data.roles || {};
-    var key = (qs('role') || 'christian').toLowerCase();
-    var r = roles[key];
+    var labelEl = document.getElementById('section-label');
+    if (labelEl) labelEl.textContent = sec.label || '';
 
-    var titleEl = document.getElementById('role-title');
-    var bodyEl  = document.getElementById('role-body');
+    var titleEl = document.getElementById('section-title');
+    if (titleEl && sec.title) {
+      titleEl.textContent = sec.title;
+      document.title = sec.title + ' \u2014 Jeremy Lim';
+    }
 
-    if (!r) {
-      titleEl.textContent = 'Not found';
-      bodyEl.innerHTML = '<p>That section does not exist. ' +
-        '<a href="index.html">Back to home</a>.</p>';
+    var coverEl = document.getElementById('section-cover');
+    if (coverEl && sec.cover) {
+      coverEl.innerHTML = '<img src="' + esc(sec.cover) + '" alt="" ' +
+        'onerror="this.parentNode.style.display=\'none\'">';
+      coverEl.style.display = '';
+    }
+
+    var introEl = document.getElementById('section-intro');
+    if (introEl && sec.intro) {
+      introEl.innerHTML = sec.intro.split(/\n\n+/)
+        .map(function (para) { return '<p>' + esc(para.trim()) + '</p>'; }).join('');
+    }
+
+    var host = document.getElementById('section-list');
+    if (!host) return;
+
+    var mine = items.filter(function (it) {
+      return it.category === category && !it.unlisted;
+    });
+    if (!mine.length) {
+      host.innerHTML = '<p class="empty-state__sub">Nothing published here yet.</p>';
       return;
     }
 
-    document.title = r.title + ' — Jeremy Lim';
-    titleEl.textContent = r.title;
+    var bySub = {};
+    mine.forEach(function (it) {
+      (bySub[it.subcategory] = bySub[it.subcategory] || []).push(it);
+    });
 
-    var leadEl = document.getElementById('role-lead');
-    if (leadEl) leadEl.textContent = r.lead || '';
-
-    var heroEl = document.getElementById('role-hero');
-    if (heroEl && r.cover) {
-      heroEl.innerHTML = '<img src="' + esc(r.cover) + '" alt="" ' +
-        'onerror="this.parentNode.style.display=\'none\'">';
-      heroEl.style.display = '';
-    }
-
-    bodyEl.innerHTML = (r.body || '').split(/\n\n+/)
-      .map(function (p) { return '<p>' + esc(p.trim()) + '</p>'; }).join('');
-
-    var linksEl = document.getElementById('role-links');
-    if (linksEl && r.links && r.links.length) {
-      linksEl.innerHTML = r.links.map(function (l) {
-        return '<a class="btn btn--gold" href="' + esc(l.url) + '">' +
-          esc(l.label) + ' &rarr;</a>';
-      }).join('');
-    }
-
-    // Let people move between the four without returning to the home page.
-    var switchEl = document.getElementById('role-switch');
-    if (switchEl) {
-      switchEl.innerHTML = ROLE_ORDER.filter(function (k) { return roles[k]; })
-        .map(function (k) {
-          return '<a href="about.html?role=' + k + '" class="role-switch__item' +
-            (k === key ? ' role-switch__item--active' : '') + '">' +
-            esc(roles[k].title) + '</a>';
-        }).join('');
-    }
+    host.innerHTML = Object.keys(bySub).map(function (sub) {
+      return '<div class="subcat" id="' + slug(sub) + '">' +
+        '<h2 class="subcat__title reveal">' + esc(sub) + '</h2>' +
+        '<div class="entry-list">' + bySub[sub].map(entryCard).join('') + '</div>' +
+      '</div>';
+    }).join('');
   }
 
   /* =========================
@@ -537,7 +544,7 @@
 
     if (!id) {
       titleEl.textContent = 'Article not found';
-      bodyEl.innerHTML = '<p>No article was specified. <a href="articles.html">Browse all articles</a>.</p>';
+      bodyEl.innerHTML = '<p>No article was specified. <a href="index.html">Back to home</a>.</p>';
       return;
     }
 
@@ -579,7 +586,7 @@
           heroEl.style.display = '';
         }
         metaEl.innerHTML =
-          '<a class="reader__cat" href="articles.html#' + slug(it.category) + '">' +
+          '<a class="reader__cat" href="' + slug(it.category) + '.html">' +
             esc(it.category) + '</a>' +
           '<span class="reader__dot">·</span>' +
           '<span>' + esc(it.subcategory) + '</span>' +
@@ -601,7 +608,7 @@
       .catch(function () {
         titleEl.textContent = 'Article not found';
         bodyEl.innerHTML = '<p>Sorry, this article could not be loaded. ' +
-          '<a href="articles.html">Browse all articles</a>.</p>';
+          '<a href="index.html">Back to home</a>.</p>';
       });
   }
 
