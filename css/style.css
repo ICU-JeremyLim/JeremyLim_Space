@@ -1227,3 +1227,16 @@ code {
   .nav, .footer, .back-to-top, .theme-btn, .cat-bar, .read-progress { display: none !important; }
   body { background: #fff; color: #000; }
 }
+
+
+/* Footer links wrap — six of them will not fit one phone-width row. */
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 1.25rem;
+}
+@media (max-width: 560px) {
+  .footer__inner { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  .footer__links { justify-content: flex-start; }
+}

@@ -236,15 +236,17 @@
 
     if (page === 'article') { renderReader(); return; }
 
-    // Research / Faith / Opinions each render one category with its own intro.
+    // Research / Faith / Opinions list one category; Photos and Links use the
+    // same header but render their own content below it.
     var sectionKey = document.body.getAttribute('data-section');
-    if (sectionKey) {
+    var category   = document.body.getAttribute('data-category');
+    if (sectionKey && category) {
       Promise.all([
         fetch('data/content.json?v=' + Date.now()).then(function (r) { return r.json(); }),
         fetch('data/articles.json?v=' + Date.now()).then(function (r) { return r.json(); })
       ]).then(function (res) {
-        renderSection(res[0], res[1], sectionKey,
-                      document.body.getAttribute('data-category'));
+        renderSectionHead(res[0], sectionKey);
+        renderSectionList(res[1], category);
         setTimeout(initReveal, 40);
       }).catch(function (e) { console.warn('section load failed', e); });
       return;
@@ -254,6 +256,7 @@
       .then(function (r) { return r.json(); })
       .then(function (data) {
         if (page === 'index')   renderHome(data);
+        if (sectionKey)         renderSectionHead(data, sectionKey);
         if (page === 'gallery') renderGallery(data);
         if (page === 'links')   renderLinks(data);
         if (page === 'articles') return renderArticlesIndex();
@@ -366,7 +369,7 @@
      SECTION PAGE  (research / faith / opinions)
      One category per page, introduced in its own words before the list.
      ========================= */
-  function renderSection(content, items, key, category) {
+  function renderSectionHead(content, key) {
     var sec = (content.sections || {})[key] || {};
 
     var labelEl = document.getElementById('section-label');
@@ -390,7 +393,9 @@
       introEl.innerHTML = sec.intro.split(/\n\n+/)
         .map(function (para) { return '<p>' + esc(para.trim()) + '</p>'; }).join('');
     }
+  }
 
+  function renderSectionList(items, category) {
     var host = document.getElementById('section-list');
     if (!host) return;
 

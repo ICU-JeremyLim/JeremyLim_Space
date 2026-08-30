@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script data-role="theme-preload">(function(){try{var t=localStorage.getItem("theme")||"dark";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
 </head>
-<body>
+<body data-section="links">
 
   <nav class="nav">
     <div class="nav__inner">
@@ -42,11 +42,12 @@
     </div>
   </nav>
 
-  <header class="page-header">
+  <header class="section-head">
     <div class="container container--narrow">
-      <div class="section-label">Connect</div>
-      <h1>Links</h1>
-      <p>Where to find me online.</p>
+      <div class="section-head__cover" id="section-cover" style="display:none"></div>
+      <div class="section-label" id="section-label"></div>
+      <h1 class="section-head__title" id="section-title">Links</h1>
+      <div class="section-head__intro" id="section-intro"></div>
     </div>
   </header>
 
@@ -60,7 +61,7 @@
     <div class="container">
       <div class="footer__inner">
         <span>&copy; <span id="yr"></span> Jeremy Lim</span>
-        <div style="display:flex;gap:1.5rem;">
+        <div class="footer__links">
           <a href="index.html">Home</a>
           <a href="research.html">Research</a>
           <a href="faith.html">Faith</a>
