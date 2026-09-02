@@ -1,19 +1,5 @@
 [
   {
-    "id": "worship-is-the-very-purpose-of-life",
-    "title": "Worship is the Very Purpose of Life",
-    "date": "2025-01-01",
-    "category": "Faith",
-    "subcategory": "Testimony & Sharing",
-    "type": "article",
-    "file": "content/articles/worship-is-the-very-purpose-of-life.md",
-    "excerpt": "初めに、一つクイズがあります！台湾語で「拝上帝的人」という言葉がありますが、英語や日本語で何に当たると思いますか？ヒントは黒字。十秒考えてみてください。",
-    "words": 2011,
-    "cover": "images/gallery/img-20260226-160842.jpg",
-    "noindex": true,
-    "thumb": "images/gallery/thumbs/img-20260226-160842.jpg"
-  },
-  {
     "id": "the-son-of-man-came-to-seek-and-to-save-the-lost",
     "title": "The Son of Man Came to Seek and to Save the Lost",
     "date": "2025-06-01",
@@ -39,32 +25,6 @@
     "words": 16,
     "cover": "images/gallery/img-20260226-160842.jpg",
     "noindex": true,
-    "thumb": "images/gallery/thumbs/img-20260226-160842.jpg"
-  },
-  {
-    "id": "five-wise-virgins",
-    "title": "油を用意した五人の賢い娘になろう",
-    "date": "2025-01-01",
-    "category": "Faith",
-    "subcategory": "Testimony & Sharing",
-    "type": "article",
-    "file": "content/articles/five-wise-virgins.md",
-    "excerpt": "今年のWorship NightのServantsは五人ですよね。皆さんと一緒に奉仕するのは大変嬉しいです。Servantsの人数（にんずう）は、マタイの福音書25章に登場する「油を用意した五人の賢い娘」と同じ人数です。このたとえ話を通して、私たちが「油を用意した賢い娘」となるよう励ましたいと思います。このたとえ話において、花婿（はなむこ）はイエス・キリストを象徴し、十人の娘はクリスチャンを象徴しています。そして、花…",
-    "words": 44,
-    "cover": "images/gallery/img-20260226-160842.jpg",
-    "thumb": "images/gallery/thumbs/img-20260226-160842.jpg"
-  },
-  {
-    "id": "essence-of-christianity-eating-together",
-    "title": "基督教的本质是一起吃饭？",
-    "date": "2025-01-01",
-    "category": "Faith",
-    "subcategory": "Testimony & Sharing",
-    "type": "article",
-    "file": "content/articles/essence-of-christianity-eating-together.md",
-    "excerpt": "基督教的本质是一起吃饭？（一緒にご飯を食べること）弟兄姐妹平安！很开心今天能和大家一起吃 BBQ，也分享一点信息。吃着烤肉的时候，我忽然在想：为什么烧烤叫 BBQ？这就牵涉到语言学的故事了。词源学家发现，barbecue 来自加勒比地区阿拉瓦克人（Arawak）的词 barabicu，意思是“立在木柱上的烤架”。这个词先进入西班牙语、葡萄牙语和法语，最后才成了英语的 barbecue。所以，当你说 BBQ 的时候，其…",
-    "cover": "images/gallery/img-20260226-160842.jpg",
-    "pdf": "content/papers/essence-of-christianity-eating-together.pdf",
     "thumb": "images/gallery/thumbs/img-20260226-160842.jpg"
   },
   {
@@ -196,19 +156,6 @@
     "thumb": "images/gallery/thumbs/20260403112542-img-9680.jpg"
   },
   {
-    "id": "about-the-double-reduction-policy",
-    "title": "The Double Reduction Policy: Transforming Education in 21st Century China",
-    "date": "2025-01-30",
-    "category": "Opinions",
-    "subcategory": "Education",
-    "type": "article",
-    "file": "content/articles/about-the-double-reduction-policy.md",
-    "excerpt": "Even though the Double Reduction Policy is not a literal educational project or program, it is one of the most impactful education policies on compulsory education in mainland China in the 21st century, and it…",
-    "words": 2282,
-    "cover": "images/gallery/img-20250404-165401.jpg",
-    "thumb": "images/gallery/thumbs/img-20250404-165401.jpg"
-  },
-  {
     "id": "rural-education-support-program-in-modern-china",
     "title": "Rural Education Support Program in Modern China",
     "date": "2025-03-05",
@@ -218,19 +165,6 @@
     "file": "content/articles/rural-education-support-program-in-modern-china.md",
     "excerpt": "Education is critical in alleviating poverty and promoting social development, particularly in rural areas. For instance, in 1905, Samuel Pollard, a British Methodist missionary, arrived in Shimenkan, a remote…",
     "words": 2428,
-    "cover": "images/gallery/img-20250404-165401.jpg",
-    "thumb": "images/gallery/thumbs/img-20250404-165401.jpg"
-  },
-  {
-    "id": "problems-and-solutions-of-cramming-education-in-china",
-    "title": "Problems and Solutions of Cramming Education in China",
-    "date": "2025-06-13",
-    "category": "Opinions",
-    "subcategory": "Education",
-    "type": "article",
-    "file": "content/articles/problems-and-solutions-of-cramming-education-in-china.md",
-    "excerpt": "According to a famous traditional Chinese saying, “All other pursuits are inferior; only studying is truly noble.” This thought originated in imperial China, where the only legitimate way to secure an official…",
-    "words": 2046,
     "cover": "images/gallery/img-20250404-165401.jpg",
     "thumb": "images/gallery/thumbs/img-20250404-165401.jpg"
   },
@@ -245,21 +179,6 @@
     "excerpt": "According to Yamashiro, there are two kinds of people from the point of view of Japanese society: Japanese and non-Japanese (175). Non-Japanese are minorities, marginalized and regarded as inferior groups in Ja…",
     "words": 1617,
     "cover": "images/gallery/20260404105739-img-9812.jpg",
-    "thumb": "images/gallery/thumbs/20260404105739-img-9812.jpg"
-  },
-  {
-    "id": "what-affects-icu-students-openness-to-different-worldviews",
-    "title": "What Affects ICU Students’ Openness to Different Worldviews",
-    "date": "2025-01-01",
-    "category": "Opinions",
-    "subcategory": "East Asia",
-    "type": "article",
-    "file": "content/articles/what-affects-icu-students-openness-to-different-worldviews.md",
-    "excerpt": "This Research paper used an interview survey approach combined with descriptive statistics to investigate how language diversity and cognitive flexibility among ICU students affect their openness to different w…",
-    "words": 3282,
-    "cover": "images/gallery/20260404105739-img-9812.jpg",
-    "noindex": true,
-    "unlisted": true,
     "thumb": "images/gallery/thumbs/20260404105739-img-9812.jpg"
   }
 ]
